@@ -425,6 +425,93 @@ Couples Resort Responsive Build
     height: 250px;
  }
  
+ #submit-button {
+    display: flex;
+    margin: 0px;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    background: #9a2018;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end;  
+ }
+ 
+ #submit-button:hover {
+    background-color: #C54242;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+ }
+ 
+ #submit-text {
+    display: block;
+ }
+ 
+ #thank-you {
+    display: none;
+ }
+ 
+ #submit-checkbox:checked ~ #submit-button #submit-text {
+    display: none;
+    animation: button-expand 0.5s ease-in-out;
+ }
+ 
+ #submit-checkbox:checked ~ #submit-button #thank-you {
+    display: block;
+    margin-right: 10px; 
+    animation: fade-in 0.75s ease-in-out;
+ }
+ 
+ #submit-checkbox:checked ~ #submit-button {
+    animation: button-expand 0.5s ease-in-out forwards;
+ }
+ 
+ #submit-checkbox:checked ~ #submit-button::after {
+    content: url(../images/logo_ideogram-couples_resort.svg);
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    animation: fade-in 0.75s ease-in-out;
+ }
+ 
+ #submit-button:active {
+    animation: button-bounce 0.5s ease-in-out;
+ }
+ 
+ 
+ @keyframes button-expand {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 324px;
+    }
+ }
+ 
+ @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+       opacity: 1;
+   }
+ }
+ 
+ @keyframes button-bounce {
+    0% {
+        transform: translateY(2px); 
+    }
+    100% {
+        transform: translateY(2px);
+    }
+ }
  
  /* 4. ---ROOMS PAGE--- */
  
