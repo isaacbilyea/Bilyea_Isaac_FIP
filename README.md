@@ -1,6 +1,6 @@
-# FIP
+# Final Integrated Project - Couples Resort
 
-This is a to-do list that demonstrates using various selectors.
+This is a re-design of the Couples Resort mobile webpage demonstrating the use of the ::after pseudo selector along with CSS animations
 
 ## Installation
 
