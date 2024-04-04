@@ -1,0 +1,450 @@
+/* 
+    CSS Guide 
+
+    1.  GENERAL STYLES
+    2.  HEADER
+
+    3.  HOME PAGE
+    3a. 
+    3b. 
+    3c. 
+    3d. 
+    3e. 
+
+    4.  PRODUCTS PAGE
+    4a. 
+    4b. 
+    4c. 
+
+    5.  CONTACT PAGE
+    5a. 
+    5b. 
+    5c. 
+
+    6.  FOOTER
+ */
+
+ /* GENERAL STYLES */
+
+.hidden {
+    display: none;
+}
+
+img, embed, object, video, picture {
+    max-width: 100%; 
+}
+  
+html {
+    box-sizing: border-box; 
+}
+  
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; 
+}
+  
+body, p, h1, h2, h3, h4, h5 {
+    margin: 0px; 
+    padding: 0px;
+}
+
+body {
+    font-family: 'Degular', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+button, input[type="submit"] {
+	border: none;
+}
+ 
+/* HEADER */
+
+header {
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding: 0 1.5rem;
+}
+
+#home-header {
+    background-color: #F79420;
+}
+
+#products-header {
+    background-color: #F15B57;
+}
+
+#contact-header {
+    background-color: #803960;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+/* 2. ---Main Nav--- */
+ 
+#main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+#main-nav button {
+    background: url(../images/burger.svg) no-repeat center;
+    transition: all .5s ease;
+    border: 0;
+    background-size:contain;
+    height: 1rem;
+    width: 1rem;
+}
+ 
+#main-nav button.expanded {
+    transform: rotate(90deg);
+}
+
+#burger-con {
+    display: none;
+}
+ 
+#burger-con.slide-toggle {
+    display: block;
+}
+ 
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+#main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+}
+ 
+#main-nav ul li a:hover {
+    color: #9a2018;
+}
+ 
+#main-nav ul li {
+    border-bottom: 1px solid #efefef;
+}
+ 
+#main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+}
+ 
+#main-nav ul li:last-child {
+    margin-bottom: 10px;
+}
+
+#header-logo {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+#header-logo h1 {
+    padding-right: .5rem;
+    font-size: 1.5rem;
+    padding-bottom: .3rem;
+}
+
+#header-logo img {
+    width: 1.5rem;
+}
+
+#cart {
+    width: 1rem;
+}
+
+
+
+
+.card-left-con {
+    width: 45%;
+}
+
+.card-right-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    margin-left: -1rem;
+}
+
+.product-cards {
+    margin-bottom: 1rem;
+}
+
+.product-cards {
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-cards h2,h3,p {
+    color: white;
+}
+
+.product-cards h2 {
+    margin-top: -.3rem;
+    font-size: 1.875rem;
+    font-weight: 800;
+}
+
+.product-cards h3 {
+    font-weight: 500;
+}
+
+.product-cards p {
+    padding-top: 1rem;
+}
+
+.product-cards button {
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.product-cards img {
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.card-backgrounds {
+    margin-bottom: 10px;
+}
+
+.cart-button {
+    padding: .5rem;
+    width: 100%;
+}
+
+.info-button {
+    padding: .5rem;
+    width: 100%;
+}
+
+#pineapple-card {
+    background-color: #EBCE56;
+}
+
+#pineapple-background {
+    background-color: #F7EBBB;
+    border-radius: 15px;
+}
+
+#pineapple-card button {
+    background-color: #F7EBBB;
+    color: #EBCE56;
+}
+
+#orange-card {
+    background-color: #F79420;
+}
+
+#orange-background {
+    background-color: #FCD4A6;
+    border-radius: 15px;
+}
+
+#orange-card button {
+    background-color: #FCD4A6;
+    color: #F79420;
+}
+
+#grapefruit-card {
+    background-color: #F15B57;
+}
+
+#grapefruit-background {
+    background-color: #F8BDBC;
+    border-radius: 15px;
+}
+
+#grapefruit-card button {
+    background-color: #F8BDBC;
+    color: #F15B57;
+}
+
+#passionfruit-card {
+    background-color: #803960;
+}
+
+#passionfruit-background {
+    background-color: #CCB0BF;
+    border-radius: 15px;
+}
+
+#passionfruit-card button {
+    background-color: #CCB0BF;
+    color: #803960;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+}
+
+#contact-form h2,h3,h4,input,textarea {
+    color: #803960;
+    font-family: 'Degular';
+}
+
+#form-text {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#contact-form h2 {
+    font-size: 1.25rem;
+}
+
+#contact-form h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#contact-form h4 {
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+#contact-form input[type="text"], textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: .75rem 0;
+    border-color: #803960;
+    border-radius: 5px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #803960;
+    color: white;
+    border-color: #803960;
+    border-radius: 5px;
+    padding: .25rem 1rem;
+}
+
+/* FOOTER */
+
+#home-footer {
+    background: url(../images/home-footer.svg) no-repeat;
+    background-size: cover;
+}
+
+#products-footer {
+    background: url(../images/products-footer.svg) no-repeat;
+    background-size: cover;
+}
+
+footer {
+    color: white;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .4rem;
+}
+
+#footer-logo {
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem 3rem 0 1rem;
+}
+
+#footer-logo h1 {
+    margin-left: .5rem;
+    padding-bottom: .3rem;
+    font-size: 1.25rem;
+}
+
+#footer-logo img {
+    width: 1.5rem;
+}
+
+#sm-icons {
+    height: .6rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.75rem;
+}
+
+#sm-icons img {
+    padding-left: .5rem;
+}
+
+footer h2 {
+    font-size: .4rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: .5rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: .5rem;
+    margin-top: .75rem;
+}
+
+
+
+
+
+/* Tablet Styling */
+
+@media screen and (min-width: 768px) { 
+    .card-right-con {
+    
+        margin-left: -.5rem;
+    }
+}
+
+/* Medium Desktop Styling */
+
+@media screen and (min-width: 1200px) { 
+
+    html {
+        font-size: 50px;
+    }
+
+}
+
+/* Large Desktop Styling */
+
+@media screen and (min-width: 1920px) { 
+
+}

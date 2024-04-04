@@ -5,17 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/sak1lcg.css">
     <title>Contact Us</title>
 </head>
-    <body>
-        <header>
-      
-        </header>
-            
+<body>
+    <header id="contact-header">
+        <nav id="main-nav">
+            <h2 class="hidden">Main Navigation</h2>
+            <button id="button"></button>
+            <div id="burger-con">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
 
-        <footer>
-      
-        </footer>
-        <script src="js/main.js"></script>   
-    </body>
+            <div id="header-logo">
+                <h1>Quatro</h1>
+                <img src="images/quatro-logo.svg" alt="logo">
+            </div>
+
+            <img src="images/cart.svg" id="cart" alt="cart">
+
+        </nav>
+    </header>
+        
+    <section id="contact-form" class="grid-con">
+    
+    <div id="form-text" class="col-span-full">
+    <h2>CONTACT US TO GET THE BALL ROLLIN'</h2>
+    <h3>LIKE SERIOUSLY. THE BALL WILL ROLL.</h3>
+    <h4>WE PROMISE.</h4>
+    </div>
+    
+    <div id="form-input" class="col-span-full">
+        <form action="email.php" method="POST" enctype="text/plain">
+            <input name="fullName" type="text" placeholder="Name*">
+            <input name="contactInfo" type="text" required placeholder="Email*">
+            <textarea name="message" placeholder="Message"></textarea>
+            <input name="submit" type="submit" value="Send">
+        </form>
+    </div>
+
+    </section>
+
+
+    <footer id="home-footer">
+
+    
+    <div id="footer-logo">
+        <img src="images/quatro-logo.svg" alt="logo">
+        <h1>Quatro</h1>
+    </div>
+
+    <div id="sm-icons">
+        <img src="images/sm-instagram.svg" alt="instagram-logo">
+        <img src="images/sm-twitter.svg" alt="twitter-logo">
+        <img src="images/sm-tiktok.svg" alt="tiktok-logo">
+        <img src="images/sm-facebook.svg" alt="facebook-logo">
+    </div>
+
+    <div id="footer-nav">
+        <ul>
+            <h2>Shop</h2>
+            <li><a href="products.html">Shop Quatro</a></li>
+            <li><a href="#">Find Quatro</a></li>
+        </ul>
+
+    <ul>
+        <h2>Learn</h2>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Why Quatro?</a></li>
+    </ul>
+
+    <ul>
+            <h2>More</h2>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy/Legal</a></li>
+        </ul>
+    </div>
+
+    </footer>
+    <script src="js/main.js"></script>   
+</body>
 </html>
