@@ -203,7 +203,9 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.product-cards h2,h3,p {
+.product-cards h2,
+.product-cards h3,
+.product-cards p {
     color: white;
 }
 
@@ -379,14 +381,17 @@ h1 {
     overflow: hidden;
 }
 
-#endless-banner h2 {
+#endless-banner h1 {
     font-weight: 800;
-    margin-top: 1rem;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    font-size: 1.75rem;
 }
 
-#endless-banner h3 {
+#endless-banner h2 {
     font-weight: 500;
-    margin-top: .25rem;
+    margin-top: 0.25rem;
+    font-size: 1.1rem;
 }
 
 #endless-banner button {
@@ -407,8 +412,13 @@ h1 {
     animation: endless 5s linear infinite;
 }
 
+#endless-images img{
+    padding-left: 0.25rem;
+}
+
+
 #endless-images img:hover {
-    transform: translateY(1rem);
+    transform: translateY(-0.25rem);
 }
 
 @keyframes endless {
@@ -419,6 +429,53 @@ h1 {
     100% {
         transform: translateX(-100%);
     }
+}
+
+
+#sustainability-banner {
+    background: #FCD4A6;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #F79420;
+    margin-top: 0.5rem;
+}
+
+#sustainability-banner img {
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+#sustainability-banner div:nth-child(5) img {
+    width: 5rem;
+}
+
+#sustainability-banner h1 {
+    font-weight: 800;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    font-size: 2.5rem;
+}
+
+#sustainability-banner h2 {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+#sustainability-banner h3 {
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    width: 60%;
 }
 
 /* FOOTER */
