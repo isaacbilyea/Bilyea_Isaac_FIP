@@ -3,7 +3,7 @@
   .full-width-grid-con {
      /* set this container as a grid, with 3 columns
      the other grid will sit in the middle column, this allows for overlapping content */
-     display: grid; 
+      display: grid; 
       grid-template-columns: 1fr minmax(0, 1200px) 1fr;  
   }
   
@@ -45,8 +45,8 @@
         display: grid; 
         grid-template-columns: repeat(12, minmax(0, 1fr));
         grid-column-gap: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 16px;
+        padding-right: 16px;
      }
   
      .m-col-span-1	{grid-column: span 1 / span 1;}
@@ -99,9 +99,9 @@
      .grid-con { 
         display: grid; 
         grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-column-gap: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
+        grid-column-gap: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
      }
   
      .l-col-span-1	{grid-column: span 1 / span 1;}
