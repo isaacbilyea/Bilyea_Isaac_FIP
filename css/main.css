@@ -183,7 +183,6 @@ h1 {
 
 }
 
-
 .card-left-con {
     width: 45%;
 }
@@ -309,9 +308,13 @@ h1 {
     margin-top: .5rem;
 }
 
-#contact-form h2,h3,h4,input,textarea {
+#contact-form h2,
+#contact-form h3,
+#contact-form h4,
+#contact-form input,
+#contact-form textarea {
     color: #803960;
-    font-family: 'Degular';
+    font-family: 'Degular', sans-serif;
 }
 
 #form-text {
@@ -366,6 +369,56 @@ h1 {
 .product-card-logo {
     width: 20%;
     padding-top: 1rem;
+}
+
+#endless-banner {
+    background: linear-gradient(#6D9D7E, #A8D4A6);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+#endless-banner h2 {
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+#endless-banner h3 {
+    font-weight: 500;
+    margin-top: .25rem;
+}
+
+#endless-banner button {
+    background: white;
+    color: #6D9D7E;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+#endless-images {
+    display: flex;
+    height: 7rem;
+    margin-top: 0.5rem;
+    position: relative;
+    bottom: -1rem;
+    animation: endless 5s linear infinite;
+}
+
+#endless-images img:hover {
+    transform: translateY(1rem);
+}
+
+@keyframes endless {
+    0% {
+        transform: (translateX(0%))
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* FOOTER */
