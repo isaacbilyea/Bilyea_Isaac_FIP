@@ -398,12 +398,11 @@ h1 {
 #endless-banner button {
     background: white;
     color: #6D9D7E;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
-
 }
 
 #endless-images {
@@ -587,6 +586,15 @@ footer ul li a {
 
     #endless-banner {
         margin-top: 0.5rem;
+        height: 300px;
+    }
+
+    #endless-banner button {
+        padding-bottom: 0.6rem;
+    }
+
+    #endless-images {
+        height: 160px;
     }
 
     #endless-banner h2{
@@ -598,16 +606,19 @@ footer ul li a {
     }
 
     #sustainability-banner div {
-        padding: 2rem;
+        width: 50%;
+    }
+
+    #sustainability-banner div:last-child {
+        padding-bottom: 1.5rem;
     }
 
     #sustainability-banner img {
-        height: 7rem;
-        margin-top: 1rem;
+        height: 6rem;
     }
     
     #sustainability-banner div:nth-child(5) img {
-        width: 7rem;
+        width: 9rem;
     }
     
     #sustainability-banner h1 {
@@ -615,11 +626,15 @@ footer ul li a {
     }
     
     #sustainability-banner h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        width: 60%;
+        padding-bottom: 1rem;
     }
     
     #sustainability-banner h3 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        width: 50%;
+        padding-top: 1rem;
     }
 }
 
@@ -627,6 +642,45 @@ footer ul li a {
 
 @media screen and (min-width: 1200px) { 
 
+    #endless-banner {
+        height: 400px;
+    }
+
+    #endless-banner h1 {
+        font-size: 2.8rem;
+        margin-top: 1.5rem;
+    }
+
+    #endless-banner h2 {
+        font-size: 2.8rem;
+    }
+
+    #endless-banner button {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem 0.7rem 1.5rem;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    #endless-images {
+        height: 180px;
+    }
+
+    #sustainability-banner h1 {
+        font-size: 4rem;
+    }
+
+    #sustainability-banner h2 {
+        width: 100%;
+    }
+
+    #sustainability-banner div {
+        width: auto;
+    }
+
+    #sustainability-banner h3 {
+        font-size: 1.75rem;
+        width: 60%;
+    }
 
 }
 
@@ -634,4 +688,56 @@ footer ul li a {
 
 @media screen and (min-width: 1920px) { 
 
+    #endless-banner {
+        height: 600px;
+    }
+
+    #endless-banner h1 {
+        font-size: 4rem;
+    }
+
+    #endless-banner h2 {
+        font-size: 4rem;
+    }
+
+    #endless-banner button {
+        font-size: 2rem;
+        border-radius: 15px;
+        padding: 0.5rem 3rem 0.8rem 3rem;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    #endless-images {
+        height: 350px;
+    }
+
+    #sustainability-banner {
+        height: 650px;
+    }
+
+    #sustainability-banner h1 {
+        font-size: 7rem;
+    }
+
+    #sustainability-banner h2 {
+        font-size: 3rem;
+        margin-top: -1.5rem;
+    }
+
+    #sustainability-banner div:last-child {
+        padding-bottom: 1.5rem;
+    }
+
+    #sustainability-banner img {
+        height: 8rem;
+
+    }
+    
+    #sustainability-banner div:nth-child(5) img {
+        width: 11rem;
+    }
+    
+    #sustainability-banner h3 {
+        font-size: 3rem;
+    }
 }
