@@ -68,6 +68,7 @@ a {
 
 button, input[type="submit"] {
 	border: none;
+    font-family: 'Degular', sans-serif;
 }
  
 /* HEADER */
@@ -398,9 +399,11 @@ h1 {
     background: white;
     color: #6D9D7E;
     font-weight: 600;
+    font-size: 1rem;
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
+
 }
 
 #endless-images {
@@ -561,16 +564,69 @@ footer ul li a {
         margin-left: -.5rem;
     }
 
+    #main-hero {
+        margin-top: 1rem;
+    }
+
+    .product-cards-index {
+        margin-top: .5rem;
+    }
     
+    .product-cards-index img:first-child {
+        border-radius: 15px;
+        padding: 2rem;
+    }
+
+    .product-cards-index div:first-of-type {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .product-card-logo {
+        margin: 0.5rem 1rem 0.5rem 0.5rem;
+    }
+
+    #endless-banner {
+        margin-top: 0.5rem;
+    }
+
+    #endless-banner h2{
+        font-size: 1.75rem;
+    }
+
+    #sustainability-banner {
+        margin-top: 1rem;
+    }
+
+    #sustainability-banner div {
+        padding: 2rem;
+    }
+
+    #sustainability-banner img {
+        height: 7rem;
+        margin-top: 1rem;
+    }
+    
+    #sustainability-banner div:nth-child(5) img {
+        width: 7rem;
+    }
+    
+    #sustainability-banner h1 {
+        font-size: 3rem;
+    }
+    
+    #sustainability-banner h2 {
+        font-size: 1.4rem;
+    }
+    
+    #sustainability-banner h3 {
+        font-size: 1.4rem;
+    }
 }
 
 /* Medium Desktop Styling */
 
 @media screen and (min-width: 1200px) { 
 
-    html {
-        font-size: 50px;
-    }
 
 }
 
