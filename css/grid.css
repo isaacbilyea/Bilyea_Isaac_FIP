@@ -10,10 +10,10 @@
    .grid-con { 
      display: grid;
      grid-template-columns: repeat(4, minmax(0, 1fr));
-     grid-column-gap: 30px;
+     grid-column-gap: 8px;
      margin: 0 auto;
-     padding-left: 15px;
-     padding-right: 15px;
+     padding-left: 8px;
+     padding-right: 8px;
   }
   
   
