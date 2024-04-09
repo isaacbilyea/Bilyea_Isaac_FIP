@@ -186,6 +186,7 @@ h1 {
 
 .card-left-con {
     width: 45%;
+
 }
 
 .card-right-con {
@@ -193,7 +194,17 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     width: 55%;
-    margin-left: -1rem;
+    margin-left: 0.5rem;
+    height: 100%;
+}
+
+.product-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
 }
 
 .product-cards {
@@ -204,12 +215,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.product-cards h2,
-.product-cards h3,
-.product-cards p {
-    color: white;
-}
-
 .product-cards h2 {
     margin-top: -.3rem;
     font-size: 1.875rem;
@@ -217,17 +222,13 @@ h1 {
 }
 
 .product-cards h3 {
-    font-weight: 500;
-}
-
-.product-cards p {
-    padding-top: 1rem;
+    font-weight: 700;
 }
 
 .product-cards button {
     border-radius: 10px;
-    font-weight: 600;
-    font-size: 0.7rem;
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .product-cards img {
@@ -236,17 +237,33 @@ h1 {
 }
 
 .card-backgrounds {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .cart-button {
-    padding: .5rem;
+    padding: .4rem 0rem 0.5rem 0rem;
     width: 100%;
 }
 
 .info-button {
-    padding: .5rem;
+    padding: .4rem 0rem 0.5rem 0rem;
     width: 100%;
+}
+
+#pineapple-card .product-card-text {
+    color: #F7EBBB;
+}
+
+#orange-card .product-card-text {
+    color: #FCD4A6;
+}
+
+#grapefruit-card .product-card-text {
+    color: #F8BDBC;
+}
+
+#passionfruit-card .product-card-text {
+    color: #CCB0BF;
 }
 
 #pineapple-card {
@@ -303,6 +320,21 @@ h1 {
 #passionfruit-card button {
     background-color: #CCB0BF;
     color: #803960;
+}
+
+.flavour-text {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+.ingredient-list {
+    font-size: 0.9rem;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.ingredient-list span {
+    font-weight: 600;
 }
 
 #contact-form {
@@ -529,6 +561,9 @@ h1 {
     padding: 0.25rem 0.5rem 0.35rem 0.5rem;
 }
 
+
+
+
 /* FOOTER */
 
 #home-footer {
@@ -599,9 +634,6 @@ footer ul li a {
     margin-right: .5rem;
     margin-top: .75rem;
 }
-
-
-
 
 
 /* Tablet Styling */
@@ -712,6 +744,16 @@ footer ul li a {
         padding: 0.5rem 1rem 0.7rem 1rem;
     }
 
+    .product-cards h2 {
+        font-size: 1.7rem;
+    }
+
+    .flavour-text {
+        font-size: 0.9rem;
+    }
+    .ingredient-list {
+        font-size: 0.85rem;
+    }
 
 }
 
@@ -759,6 +801,56 @@ footer ul li a {
         width: 60%;
     }
 
+    .product-cards h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .product-cards h3 {
+        font-size: 1.75rem;
+    }
+
+    .flavour-text {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .ingredient-list {
+        font-size: 1.29rem;
+        line-height: 1.6rem;
+    }
+
+    .card-left-con {
+        margin-right: 1rem;
+    }
+
+    .product-cards {
+        padding: 1.3rem;
+    }
+
+    .product-cards img {
+        padding: 2rem;
+    }
+
+    .card-backgrounds {
+        margin-bottom: 1.3rem;
+    }
+
+    .product-card-text {
+        margin-bottom: 1.3rem;
+    }
+
+    .cart-button {
+        padding: .7rem 0rem 0.8rem 0rem;
+    }
+    
+    .info-button {
+        padding: .7rem 0rem 0.8rem 0rem;
+    }
+
+    .product-cards button {
+        font-size: 1.1rem;
+    }
 }
 
 /* Large Desktop Styling */
@@ -814,10 +906,6 @@ footer ul li a {
         margin-top: -1.5rem;
     }
 
-    #sustainability-banner div:last-child {
-        padding-bottom: 1.5rem;
-    }
-
     #sustainability-banner img {
         height: 8rem;
 
@@ -829,5 +917,57 @@ footer ul li a {
     
     #sustainability-banner h3 {
         font-size: 3rem;
+    }
+
+    .product-cards h2 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        margin-top: -.5rem;
+    }
+
+    .product-cards h3 {
+        font-size: 2rem;
+    }
+
+    .flavour-text {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+    }
+
+    .ingredient-list {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .card-left-con {
+        margin-right: 1rem;
+    }
+
+    .product-cards {
+        padding: 2rem;
+    }
+
+    .product-cards img {
+        padding: 2rem;
+    }
+
+    .card-backgrounds {
+        margin-bottom: 2rem;
+    }
+
+    .product-card-text {
+        margin-bottom: 2rem;
+    }
+
+    .cart-button {
+        padding: 1rem 0rem 1.2rem 0rem;
+    }
+    
+    .info-button {
+        padding: 1rem 0rem 1.2rem 0rem;
+    }
+
+    .product-cards button {
+        font-size: 2rem;
     }
 }
