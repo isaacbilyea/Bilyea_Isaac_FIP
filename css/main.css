@@ -480,6 +480,48 @@ h1 {
     width: 60%;
 }
 
+#hero-video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#hero-video video {
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    z-index: 1;
+}
+
+#video-text {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    margin-right: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#hero-video h1 {
+    font-weight: 800;
+    line-height: 2rem;
+    text-align: center;
+}
+
+#hero-video button {
+    background-color: #F15B57;
+    color: white;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem 0.35rem 0.5rem;
+}
+
 /* FOOTER */
 
 #home-footer {
@@ -636,6 +678,34 @@ footer ul li a {
         width: 50%;
         padding-top: 1rem;
     }
+
+    #video-text {
+        position: absolute;
+        color: white;
+        z-index: 2;
+        width: 100%;
+        margin-right: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    #hero-video h1 {
+        line-height: 4rem;
+        font-size: 4rem;
+    }
+    
+    #hero-video button {
+        font-weight: 600;
+        margin-top: 1.5rem;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem 0.7rem 1rem;
+    }
+
+
 }
 
 /* Medium Desktop Styling */
@@ -687,6 +757,19 @@ footer ul li a {
 /* Large Desktop Styling */
 
 @media screen and (min-width: 1920px) { 
+
+    .product-card-logo {
+        margin-bottom: 0;
+        padding-top: 1.25rem;
+    }
+
+    .product-cards-index {
+        padding: 2rem;
+    }
+
+    .product-cards-index div:first-of-type{
+        padding: 2rem;
+    }
 
     #endless-banner {
         height: 600px;
