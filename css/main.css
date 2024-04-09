@@ -480,6 +480,13 @@ h1 {
     width: 60%;
 }
 
+
+#product-hero {
+    border-radius: 20px;
+    margin: 0.5rem 0;
+
+}
+
 #hero-video {
     position: relative;
     display: flex;
