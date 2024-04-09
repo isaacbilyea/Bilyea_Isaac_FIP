@@ -184,6 +184,23 @@ h1 {
 
 }
 
+#assorted-banner {
+    position: relative;
+}
+
+#assorted-banner button {
+    position: absolute;
+    bottom: 10%;
+    left: 29.5%;
+    background-color: #6D9D7E;
+    color: #A8D4A6;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+    font-size: 0.475rem;
+    font-weight: 600;
+
+}
+
 .card-left-con {
     width: 45%;
 
@@ -524,13 +541,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    width: 100%;
 }
 
 #hero-video video {
     border-radius: 15px;
     margin-top: 0.5rem;
     z-index: 1;
+    width: 100%;
 }
 
 #video-text {
@@ -729,6 +747,10 @@ footer ul li a {
         justify-content: center;
         align-items: flex-end;
     }
+
+    #hero-video {
+        margin-top: .5rem;
+    }
     
     #hero-video h1 {
         line-height: 4rem;
@@ -751,10 +773,24 @@ footer ul li a {
     .flavour-text {
         font-size: 0.9rem;
     }
+
     .ingredient-list {
         font-size: 0.85rem;
     }
 
+    #assorted-banner {
+        margin: 0.5rem 0;
+    }
+
+    #assorted-banner button {
+        position: absolute;
+        bottom: 7%;
+        left: 23%;
+        padding: 0.25rem 3.8rem 0.3rem 3.8rem;
+        font-size: 1rem;
+        border-radius: 7px;
+    }
+    
 }
 
 /* Medium Desktop Styling */
@@ -850,6 +886,15 @@ footer ul li a {
 
     .product-cards button {
         font-size: 1.1rem;
+    }
+
+    #assorted-banner button {
+        position: absolute;
+        bottom: 5.5%;
+        left: 22.5%;
+        padding: .5rem 6.5rem .7rem 6.5rem;
+        font-size: 1.5rem;
+        border-radius: 10px;
     }
 }
 
@@ -969,5 +1014,14 @@ footer ul li a {
 
     .product-cards button {
         font-size: 2rem;
+    }
+
+    #assorted-banner button {
+        position: absolute;
+        bottom: 5.5%;
+        left: 22.5%;
+        padding: 1rem 12rem 1.2rem 12rem;
+        font-size: 2rem;
+        border-radius: 15px;
     }
 }
