@@ -9,25 +9,36 @@
     <title>Contact Us</title>
 </head>
 <body>
+    <h1 class="hidden">Contact Us</h1>
     <header id="contact-header">
         <nav id="main-nav">
             <h2 class="hidden">Main Navigation</h2>
-            <button id="button"></button>
+            
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" id="burger-icon">
+            <img src="images/burger.svg" alt="Burger Menu icon">
+            </label>
+
+            <h1 id="wide-header">Quatro</h1>
+            
+            <div id="header-logo">
+                <a href="index.html">
+                    <h1>Quatro</h1>
+                    <img src="images/quatro-logo-white.svg" alt="logo">
+                </a>
+            </div>
+
             <div id="burger-con">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
+                    <li><a id="wide-logo" href="index.html"><img src="images/quatro-logo-white.svg" alt="logo"></a></li>
                     <li><a href="#">Our Story</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
 
-            <div id="header-logo">
-                <h1>Quatro</h1>
-                <img src="images/quatro-logo-white.svg" alt="logo">
-            </div>
-
-            <img src="images/cart.svg" id="cart" alt="cart">
+         <img src="images/cart.svg" id="cart" alt="cart">
 
         </nav>
     </header>
