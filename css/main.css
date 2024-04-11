@@ -70,16 +70,16 @@ button, input[type="submit"] {
 	border: none;
     font-family: 'Degular', sans-serif;
 }
+
+h1 {
+    font-weight: 800;
+}
  
 /* HEADER */
 
 header {
     color: white;
-    border-radius: 0 0 1rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 3rem;
+    border-radius: 0 0 1.25rem 1.25rem;
     padding: 0 1.5rem;
 }
 
@@ -95,9 +95,6 @@ header {
     background-color: #803960;
 }
 
-h1 {
-    font-weight: 800;
-}
 
 /* 2. ---Main Nav--- */
  
@@ -105,7 +102,8 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    height: 2.75rem;
 }
 
 #main-nav button {
@@ -113,8 +111,8 @@ h1 {
     transition: all .5s ease;
     border: 0;
     background-size:contain;
-    height: 1rem;
-    width: 1rem;
+    height: 1.25rem;
+    width: 1.25rem;
 }
  
 #main-nav button.expanded {
@@ -128,18 +126,18 @@ h1 {
 #burger-con.slide-toggle {
     display: block;
 }
- 
+
 #main-nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+
 }
- 
+
 #main-nav ul li a {
     display: block;
     padding: 10px 0 10px 0;
     text-align: center;
-    color: #626262;
+    color: white;
+    font-weight: 600;
 }
  
 #main-nav ul li a:hover {
@@ -174,14 +172,17 @@ h1 {
     width: 1.5rem;
 }
 
+#wide-header {
+    display: none;
+}
+
 #cart {
-    width: 1rem;
+    width: 1.25rem;
 }
 
 #main-hero {
     border-radius: 20px;
     margin: 0.5rem 0;
-
 }
 
 #assorted-banner {
@@ -657,6 +658,74 @@ footer ul li a {
 /* Tablet Styling */
 
 @media screen and (min-width: 768px) { 
+
+    header {
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+
+    #cart {
+        position: absolute;
+        right: 3.5%;
+    }
+    
+    #main-nav h1 {
+        position: absolute;
+        left: 3.5%;
+    }
+
+    #main-nav button {
+        display: none;
+    }
+
+    #burger-con {
+        display: block;
+    }
+
+    #wide-header {
+        display: block;
+    }
+    
+    #header-logo {
+        display: none;
+    }
+
+    #main-nav {
+        height: 4rem;
+    }
+
+    #main-nav h1{
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+    
+    #main-nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #main-nav ul li {
+        margin: 0rem 1.25rem;
+        border-bottom: none;
+    }
+    
+    #main-nav ul li a {
+        font-size: 0.9rem;
+        margin-bottom: .2rem;
+    }
+     
+    #main-nav ul li img {
+        width: 2.25rem;
+    }
+     
+    #main-nav ul li:first-child {
+        border-top: none;
+    }
+     
+    #main-nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
     .card-right-con {
     
         margin-left: -.5rem;
@@ -797,6 +866,41 @@ footer ul li a {
 
 @media screen and (min-width: 1200px) { 
 
+    header {
+        border-radius: 0 0 1.75rem 1.75rem;
+    }
+
+    #cart {
+        right: 2%;
+        width: 1.75rem;
+    }
+    
+    #main-nav h1 {
+        left: 2%;
+    }
+
+    #main-nav {
+        height: 4.75rem;
+    }
+
+    #main-nav h1{
+        font-size: 2.25rem;
+        margin-bottom: .6rem;
+    }
+    
+    #main-nav ul li {
+        margin: 0rem 2.5rem;
+    }
+    
+    #main-nav ul li a {
+        font-size: 1.25rem;
+        margin-bottom: .2rem;
+    }
+     
+    #main-nav ul li img {
+        width: 2.75rem;
+    }
+
     #endless-banner {
         height: 400px;
     }
@@ -901,6 +1005,41 @@ footer ul li a {
 /* Large Desktop Styling */
 
 @media screen and (min-width: 1920px) { 
+
+    header {
+        border-radius: 0 0 3rem 3rem;
+    }
+
+    #cart {
+        right: 3%;
+        width: 3rem;
+    }
+    
+    #main-nav h1 {
+        left: 3%;
+    }
+
+    #main-nav {
+        height: 8rem;
+    }
+
+    #main-nav h1{
+        font-size: 4rem;
+        margin-bottom: .75rem;
+    }
+    
+    #main-nav ul li {
+        margin: 0rem 4rem;
+    }
+    
+    #main-nav ul li a {
+        font-size: 1.75rem;
+        margin-bottom: .2rem;
+    }
+     
+    #main-nav ul li img {
+        width: 4.5rem;
+    }
 
     .product-card-logo {
         margin-bottom: 0;
