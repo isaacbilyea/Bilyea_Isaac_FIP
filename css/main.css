@@ -105,8 +105,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: .5rem;
+    justify-content: center;
+    padding: 1rem;
 }
 
 #main-nav label img {
@@ -124,14 +124,6 @@ header {
 
 #main-nav input, #burger-con {
     display: none;
-    max-height: 500px;
-}
-
-#main-nav input:checked ~ #burger-con {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
- 
 }
 
 #burger-con ul li a img {
@@ -144,10 +136,7 @@ header {
 
 #main-nav input:checked ~ label img {
     transform: rotate(90deg);
-}
-
-#main-nav ul {
-    list-style: none;
+    transition: 50ms linear;
 }
 
 #main-nav ul li a {
@@ -158,10 +147,23 @@ header {
 }
 
 #burger-con ul {
+    list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    padding-top: .5rem;
+}
+
+
+#burger-con ul li:hover {
+    transform: translateY(-1px);
+    transition: 50ms ease-in-out;
+}
+
+#burger-con ul li a:hover {
+    text-decoration: underline 1px;
 }
 
 #header-logo a {
@@ -676,15 +678,17 @@ footer ul li a {
     }
 
     #cart {
+        width: 1.5rem;
         right: 3.5%;
-        top: 2%;
+        top: 3.5%;
     }
     
     #main-nav h1 {
         position: absolute;
         color: white;
         left: 3.5%;
-        top: .75%;
+        font-size: 1.75rem;
+        margin-bottom: .5rem;
     }
 
     #main-nav button {
@@ -707,6 +711,11 @@ footer ul li a {
         display: none;
     }
 
+    #burger-con ul {
+        padding-left: 2.75rem;
+        margin-top: .5rem;
+    }
+
     #burger-con ul li a img {
         display: block;
     }
@@ -716,28 +725,20 @@ footer ul li a {
     }
 
     #main-nav {
-        height: 4rem;
-        padding: 0;
+        padding: .75rem;
+        flex-direction: row;
     }
 
-    #main-nav h1{
-        font-size: 2rem;
-        margin-bottom: .5rem;
-    }
-    
     #main-nav ul li {
-        margin: 0rem 1.25rem;
-        border-bottom: none;
+        margin: 0rem 1rem;
     }
     
     #main-nav ul li a {
-        font-size: 0.9rem;
-        margin-bottom: -.3rem;
+        font-size: 1rem;
     }
      
     #main-nav ul li a img {
-        width: 2.25rem;
-        margin-top: -.1rem;
+        width: 3rem;
     }
 
     .card-right-con {
@@ -884,35 +885,37 @@ footer ul li a {
     }
 
     #cart {
-        right: 2%;
-        width: 1.75rem;
+        right: 2.5%;
+        top: 3.75%;
+        width: 2rem;
     }
     
     #main-nav h1 {
-        left: 2%;
+        left: 2.5%;
     }
 
     #main-nav {
-        height: 4.75rem;
+        padding: 1rem;
     }
 
     #main-nav h1{
-        font-size: 2.25rem;
-        margin-bottom: .6rem;
+        font-size: 2.5rem;
     }
     
     #main-nav ul li {
         margin: 0rem 2.5rem;
     }
+
+    #burger-con ul {
+        padding-left: 3rem;
+    }
     
     #main-nav ul li a {
-        font-size: 1.25rem;
-        margin-bottom: 0rem;
+        font-size: 1.3rem;
     }
      
     #main-nav ul li a img {
-        width: 2.75rem;
-        padding-top: .1rem;
+        width: 3.5rem;
     }
 
     #endless-banner {
@@ -1025,37 +1028,31 @@ footer ul li a {
     }
 
     #cart {
-        right: 3%;
-        top: 3.5%;
+        right: 2.5%;
+        top: 4%;
         width: 3rem;
     }
     
     #main-nav h1 {
-        left: 3%;
-        top: 1.5%;
-    }
-
-    #main-nav {
-        height: 8rem;
-    }
-
-    #main-nav h1{
+        left: 2.5%;
         font-size: 4rem;
-        margin-bottom: .75rem;
+        margin-bottom: 1rem;
     }
-    
+
+    #burger-con ul {
+        padding-left: 4.5rem;
+    }
+
     #main-nav ul li {
         margin: 0rem 4rem;
     }
     
     #main-nav ul li a {
-        font-size: 1.75rem;
-        margin-bottom: .2rem;
+        font-size: 2rem;
     }
      
     #main-nav ul li a img {
         width: 4.5rem;
-        padding-top: .75rem;
     }
 
     .product-card-logo {
