@@ -55,9 +55,6 @@ body, p, h1, h2, h3, h4, h5 {
 
 body {
     font-family: 'Degular', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     font-size: 16px;
 }
 
@@ -371,27 +368,43 @@ header {
 }
 
 #contact-form {
+    color: #803960;
+}
+
+#contact-info {
     display: flex;
     flex-direction: column;
+    border: 2px solid;
+    border-radius: 7px;
+    text-align: center;
+    border-color: #803960;
     margin-top: .5rem;
 }
 
-#contact-form h2,
-#contact-form h3,
-#contact-form h4,
-#contact-form input,
-#contact-form textarea {
-    color: #803960;
-    font-family: 'Degular', sans-serif;
+#contact-info span {
+    font-weight: 700;
+}
+
+#contact-info p {
+    padding: .25rem;
+}
+
+#contact-info h1 {
+    padding: .5rem;
+}
+
+#contact-info p:last-of-type {
+    padding-bottom: 1rem;
 }
 
 #form-text {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1rem 0 .5rem 0;
 }
 
 #contact-form h2 {
     font-size: 1.25rem;
+    font-weight: 800;
 }
 
 #contact-form h3 {
@@ -399,26 +412,31 @@ header {
     font-weight: 600;
 }
 
-#contact-form h4 {
-    font-size: .75rem;
-    font-weight: 400;
-}
-
 #contact-form input[type="text"], textarea {
     display: flex;
     flex-direction: column;
     width: 100%;
+    font-size: .75rem;
+    padding: .5rem 0rem .6rem .5rem;
     margin: .75rem 0;
     border-color: #803960;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-family: 'Degular', sans-serif;
+    color: #803960;
+}
+
+#contact-form textarea {
+    height: 5rem;
+    padding: .35rem 0rem 0rem .5rem;
 }
 
 #contact-form input[type="submit"] {
     background-color: #803960;
     color: white;
     border-color: #803960;
-    border-radius: 5px;
-    padding: .25rem 1rem;
+    border-radius: 4px;
+    padding: .4rem 2rem .6rem 2rem;
+    font-weight: 700;
 }
 
 .product-cards-index {
@@ -605,6 +623,11 @@ header {
 
 #products-footer {
     background: url(../images/products-footer.svg) no-repeat;
+    background-size: cover;
+}
+
+#contact-footer {
+    background: url(../images/contact-footer.svg) no-repeat;
     background-size: cover;
 }
 
@@ -1218,6 +1241,7 @@ footer ul li a {
 
     footer {
         padding: 2rem 0rem;
+        margin-top: 2rem;
     }
 
     #sm-icons {
