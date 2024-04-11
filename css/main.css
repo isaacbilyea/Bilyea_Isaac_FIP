@@ -369,6 +369,7 @@ header {
 
 #contact-form {
     color: #803960;
+    margin: 1rem;
 }
 
 #contact-info {
@@ -379,6 +380,7 @@ header {
     text-align: center;
     border-color: #803960;
     margin-top: .5rem;
+    max-width: 250px;
 }
 
 #contact-info span {
@@ -398,8 +400,8 @@ header {
 }
 
 #form-text {
-    text-align: center;
-    margin: 1rem 0 .5rem 0;
+    text-align: left;
+    margin: 1.5rem 0 .5rem 0;
 }
 
 #contact-form h2 {
@@ -409,7 +411,7 @@ header {
 
 #contact-form h3 {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #contact-form input[type="text"], textarea {
@@ -423,6 +425,7 @@ header {
     border-radius: 4px;
     font-family: 'Degular', sans-serif;
     color: #803960;
+    max-width: 100%;
 }
 
 #contact-form textarea {
@@ -904,9 +907,55 @@ footer ul li a {
     #footer-nav {
         margin-right: 1.5rem;
         margin-top: 1rem;
-
     }
-    
+
+    #contact-info {
+        border-radius: 6px;
+        border: 3px solid;
+        max-width: 400px;
+    }
+
+    #contact-info p {
+        font-size: 1.25rem;
+    }
+
+    #contact-form {
+        margin: 2rem;
+    }
+
+    #contact-info h1 {
+        font-size: 1.75rem;
+    }
+
+    #contact-form h2 {
+        font-size: 2.25rem;
+    }
+
+    #contact-form h3 {
+        font-size: 1.75rem;
+    }
+
+    #contact-form input[type="submit"] {
+        border-radius: 4px;
+        padding: .4rem 2rem .6rem 2rem;
+    }
+
+    #contact-form input[type="text"], textarea {
+        font-size: 1.2rem;
+        border: 3px solid;
+        border-radius: 7px;
+    }
+
+    #contact-form textarea {
+        height: 10rem;
+    }
+
+    #contact-form input[type="submit"] {
+        padding: .5rem 3.25rem .7rem 3.25rem;
+        font-size: 1.2rem;
+        border-radius: 6px;
+    }
+
 }
 
 /* Medium Desktop Styling */
@@ -1078,6 +1127,68 @@ footer ul li a {
         margin-right: 2.5rem;
         margin-top: 1.5rem;
     }
+
+    #form-text {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 0;
+        margin-right: 1rem;
+    }
+
+    #form-input {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-right: 1rem;
+    }
+
+    #contact-info {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-left: 1rem;
+        margin-bottom: 3.7rem;
+        border: 3px solid;
+        max-width: 100%;
+    }
+
+    #contact-info p {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+
+    #contact-form {
+        margin: 3rem;
+    }
+
+    #contact-form h1 {
+        font-size: 2.5rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #contact-form h2 {
+        font-size: 2.5rem;
+    }
+    
+    #contact-form h3 {
+        font-size: 1.75rem;
+    }
+
+    #contact-form input[type="text"], textarea {
+        font-size: 1.25rem;
+        border: 3px solid;
+        border-radius: 7px;
+    }
+
+    #contact-form textarea {
+        height: 10rem;
+    }
+
+    #contact-form input[type="submit"] {
+        padding: .6rem 3.5rem .8rem 3.5rem;
+        font-size: 1.25rem;
+        border-radius: 7px;
+    }
+
 }
 
 /* Large Desktop Styling */
@@ -1266,6 +1377,52 @@ footer ul li a {
     #footer-nav {
         margin-right: 5rem;
         margin-top: 1.5rem;
+    }
+
+    #contact-info {
+        border-radius: 10px;
+        margin-bottom: 4.2rem;
+        border-radius: 8px;
+    }
+
+    #contact-info p {
+        font-size: 2.25rem;
+        padding: 1.25rem;
+    }
+
+    #contact-form {
+        margin: 7rem;
+    }
+
+    #contact-form h1 {
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    #contact-form h2 {
+        font-size: 3.25rem;
+    }
+    
+    #contact-form h3 {
+        font-size: 2.25rem;
+    }
+
+    #contact-form input[type="text"], textarea {
+        font-size: 1.5rem;
+        border-radius: 8px;
+        padding: .5rem 0rem .7rem .5rem;
+    }
+
+    #contact-form textarea {
+        height: 15rem;
+        padding: .4rem 0rem 0rem .5rem;
+    }
+
+    #contact-form input[type="submit"] {
+        padding: .6rem 4rem .9rem 4rem;
+        font-size: 1.5rem;
+
     }
 
 }
