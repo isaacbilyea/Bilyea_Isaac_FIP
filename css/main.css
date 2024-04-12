@@ -2,29 +2,28 @@
     CSS Guide 
 
     1.  GENERAL STYLES
+
     2.  HEADER
 
     3.  HOME PAGE
-    3a. 
-    3b. 
-    3c. 
-    3d. 
-    3e. 
+    3a. Main Hero
+    3b. Product Cards
+    3c. Endless Banner
+    3d. Sustainability Banner
 
     4.  PRODUCTS PAGE
-    4a. 
-    4b. 
-    4c. 
+    4a. Products Hero
+    4b. Assorted Banner
+    4c. Product Cards
 
     5.  CONTACT PAGE
-    5a. 
-    5b. 
-    5c. 
+    5a. Contact Form
+    5b. Contact Info
 
     6.  FOOTER
- */
+*/
 
- /* GENERAL STYLES */
+/* GENERAL STYLES */
 
 .hidden {
     display: none;
@@ -56,6 +55,8 @@ body, p, h1, h2, h3, h4, h5 {
 body {
     font-family: 'Degular', sans-serif;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -72,7 +73,7 @@ h1 {
     font-weight: 800;
 }
  
-/* HEADER */
+/* 2. HEADER */
 
 header {
     color: white;
@@ -91,12 +92,6 @@ header {
 #contact-header {
     background-color: #803960;
 }
-
-.hidden {
-    display: none;
-}
-
-/* 2. ---Main Nav--- */
  
 #main-nav {
     display: flex;
@@ -153,7 +148,6 @@ header {
     padding-top: .5rem;
 }
 
-
 #burger-con ul li:hover {
     transform: translateY(-1px);
     transition: 50ms ease-in-out;
@@ -193,10 +187,199 @@ header {
     top: 2%;
 }
 
+
+/* 3. HOME PAGE */
+
+/* 3a. Main Hero */
+
 #main-hero {
     border-radius: 20px;
     margin: 0.5rem 0;
 }
+
+/* 3b. Product Cards */
+
+.product-cards-index {
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.product-cards-index img:first-child {
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.product-card-logo {
+    width: 20%;
+    padding-top: 1rem;
+}
+
+/* 3c. Endless Banner */
+
+#endless-banner {
+    background: linear-gradient(#6D9D7E, #A8D4A6);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+#endless-banner h1 {
+    font-weight: 800;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    font-size: 1.75rem;
+}
+
+#endless-banner h2 {
+    font-weight: 500;
+    margin-top: 0.25rem;
+    font-size: 1.1rem;
+}
+
+#endless-banner button {
+    background: white;
+    color: #6D9D7E;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+#endless-images {
+    display: flex;
+    height: 7rem;
+    margin-top: 0.5rem;
+    position: relative;
+    bottom: -1rem;
+    animation: endless 5s linear infinite;
+}
+
+#endless-images img{
+    padding-left: 0.25rem;
+}
+
+
+#endless-images img:hover {
+    transform: translateY(-0.25rem);
+}
+
+@keyframes endless {
+    0% {
+        transform: (translateX(0%))
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 3d. Sustainability Banner */
+
+#sustainability-banner {
+    background: #FCD4A6;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #F79420;
+    margin-top: 0.5rem;
+}
+
+#sustainability-banner img {
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+#sustainability-banner div:nth-child(5) img {
+    width: 5rem;
+}
+
+#sustainability-banner h1 {
+    font-weight: 800;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    font-size: 2.5rem;
+}
+
+#sustainability-banner h2 {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+#sustainability-banner h3 {
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    width: 60%;
+}
+
+/* 4. PRODUCTS PAGE */
+
+/* 4a. Products Hero */
+
+#product-hero {
+    border-radius: 20px;
+    margin: 0.5rem 0;
+
+}
+
+#hero-video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#hero-video video {
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    z-index: 1;
+    width: 100%;
+}
+
+#video-text {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    margin-right: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#hero-video h1 {
+    font-weight: 800;
+    line-height: 2rem;
+    text-align: center;
+}
+
+#hero-video button {
+    background-color: #F15B57;
+    color: white;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem 0.35rem 0.5rem;
+}
+
+/* 4b. Assorted Banner */
 
 #assorted-banner {
     position: relative;
@@ -213,6 +396,8 @@ header {
     font-size: 0.475rem;
     font-weight: 600;
 }
+
+/* 4c. Product Cards */
 
 .card-left-con {
     width: 45%;
@@ -367,36 +552,14 @@ header {
     font-weight: 600;
 }
 
+
+/* 5. CONTACT PAGE */
+
+/* 5a. Contact Form */
+
 #contact-form {
     color: #803960;
     margin: 1rem;
-}
-
-#contact-info {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid;
-    border-radius: 7px;
-    text-align: center;
-    border-color: #803960;
-    margin-top: .5rem;
-    max-width: 250px;
-}
-
-#contact-info span {
-    font-weight: 700;
-}
-
-#contact-info p {
-    padding: .25rem;
-}
-
-#contact-info h1 {
-    padding: .5rem;
-}
-
-#contact-info p:last-of-type {
-    padding-bottom: 1rem;
 }
 
 #form-text {
@@ -442,178 +605,33 @@ header {
     font-weight: 700;
 }
 
-.product-cards-index {
-    border-radius: 20px;
-    padding: 1rem;
+/* 5b. Contact Info */
+
+#contact-info {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.5rem;
-}
-
-.product-cards-index img:first-child {
-    border-radius: 15px;
-    padding: 1rem;
-}
-
-.product-card-logo {
-    width: 20%;
-    padding-top: 1rem;
-}
-
-#endless-banner {
-    background: linear-gradient(#6D9D7E, #A8D4A6);
-    border-radius: 15px;
+    border: 2px solid;
+    border-radius: 7px;
     text-align: center;
-    color: white;
-    overflow: hidden;
+    border-color: #803960;
+    margin-top: .5rem;
+    max-width: 250px;
 }
 
-#endless-banner h1 {
-    font-weight: 800;
-    width: 80%;
-    margin: 1rem auto 0 auto;
-    font-size: 1.75rem;
-}
-
-#endless-banner h2 {
-    font-weight: 500;
-    margin-top: 0.25rem;
-    font-size: 1.1rem;
-}
-
-#endless-banner button {
-    background: white;
-    color: #6D9D7E;
+#contact-info span {
     font-weight: 700;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
 }
 
-#endless-images {
-    display: flex;
-    height: 7rem;
-    margin-top: 0.5rem;
-    position: relative;
-    bottom: -1rem;
-    animation: endless 5s linear infinite;
+#contact-info p {
+    padding: .25rem;
 }
 
-#endless-images img{
-    padding-left: 0.25rem;
+#contact-info h1 {
+    padding: .5rem;
 }
 
-
-#endless-images img:hover {
-    transform: translateY(-0.25rem);
-}
-
-@keyframes endless {
-    0% {
-        transform: (translateX(0%))
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
-#sustainability-banner {
-    background: #FCD4A6;
-    border-radius: 15px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    color: #F79420;
-    margin-top: 0.5rem;
-}
-
-#sustainability-banner img {
-    height: 3rem;
-    margin-top: 1rem;
-}
-
-#sustainability-banner div:nth-child(5) img {
-    width: 5rem;
-}
-
-#sustainability-banner h1 {
-    font-weight: 800;
-    width: 80%;
-    margin: 1rem auto 0 auto;
-    font-size: 2.5rem;
-}
-
-#sustainability-banner h2 {
-    margin: 0 auto;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-    width: 80%;
-}
-
-#sustainability-banner h3 {
-    margin: 0 auto;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    width: 60%;
-}
-
-
-#product-hero {
-    border-radius: 20px;
-    margin: 0.5rem 0;
-
-}
-
-#hero-video {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-#hero-video video {
-    border-radius: 15px;
-    margin-top: 0.5rem;
-    z-index: 1;
-    width: 100%;
-}
-
-#video-text {
-    position: absolute;
-    color: white;
-    z-index: 2;
-    width: 100%;
-    margin-right: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-#hero-video h1 {
-    font-weight: 800;
-    line-height: 2rem;
-    text-align: center;
-}
-
-#hero-video button {
-    background-color: #F15B57;
-    color: white;
-    font-weight: 600;
-    margin: 0 auto;
-    margin-top: 1rem;
-    border-radius: 5px;
-    padding: 0.25rem 0.5rem 0.35rem 0.5rem;
+#contact-info p:last-of-type {
+    padding-bottom: 1rem;
 }
 
 
@@ -684,6 +702,8 @@ footer ul li a {
 
 @media screen and (min-width: 768px) { 
 
+/* 2. HEADER */
+
     header {
         border-radius: 0 0 1.5rem 1.5rem;
     }
@@ -752,13 +772,15 @@ footer ul li a {
         width: 3rem;
     }
 
-    .card-right-con {
-        margin-left: -.5rem;
-    }
+/* 3. HOME PAGE */
+
+/* 3a. Main Hero */
 
     #main-hero {
         margin-top: 1rem;
     }
+
+/* 3b. Product Cards */
 
     .product-cards-index {
         margin-top: .5rem;
@@ -777,6 +799,8 @@ footer ul li a {
         margin: 0.5rem 1rem 0.5rem 0.5rem;
     }
 
+/* 3c. Endless Banner */   
+
     #endless-banner {
         margin-top: 0.5rem;
         height: 300px;
@@ -793,6 +817,8 @@ footer ul li a {
     #endless-banner h2{
         font-size: 1.75rem;
     }
+
+/* 3d. Sustainability Banner */  
 
     #sustainability-banner {
         margin-top: 1rem;
@@ -830,6 +856,10 @@ footer ul li a {
         padding-top: 1rem;
     }
 
+/* 4. PRODUCTS PAGE */  
+
+/* 4a. Products Hero */  
+
     #video-text {
         position: absolute;
         color: white;
@@ -860,6 +890,30 @@ footer ul li a {
         padding: 0.5rem 1rem 0.7rem 1rem;
     }
 
+    
+
+/* 4b. Assorted Banner */  
+
+#assorted-banner {
+    margin: 0.5rem 0;
+}
+
+#assorted-banner button {
+    position: absolute;
+    bottom: 7%;
+    left: 23%;
+    padding: 0.25rem 3.8rem 0.3rem 3.8rem;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+
+/* 4c. Product Cards */  
+
+    .card-right-con {
+        margin-left: -.5rem;
+    }
+
     .product-cards h2 {
         font-size: 1.7rem;
     }
@@ -872,59 +926,12 @@ footer ul li a {
         font-size: 0.85rem;
     }
 
-    #assorted-banner {
-        margin: 0.5rem 0;
-    }
+/* 5. CONTACT PAGE */  
 
-    #assorted-banner button {
-        position: absolute;
-        bottom: 7%;
-        left: 23%;
-        padding: 0.25rem 3.8rem 0.3rem 3.8rem;
-        font-size: 1rem;
-        border-radius: 7px;
-    }
-    
-    #sm-icons {
-        margin-top: 3.5rem;
-        margin-left: 1.5rem;
-    }
-    
-    #sm-icons img {
-        padding-left: .75rem;
-        height: 1.5rem;
-    }
-    
-    footer h2 {
-        font-size: 1.25rem;
-    }
-    
-    footer ul {
-        padding: 1rem;
-        font-size: 1.25rem;
-    }
-    
-    #footer-nav {
-        margin-right: 1.5rem;
-        margin-top: 1rem;
-    }
-
-    #contact-info {
-        border-radius: 6px;
-        border: 3px solid;
-        max-width: 400px;
-    }
-
-    #contact-info p {
-        font-size: 1.25rem;
-    }
+/* 5a. Contact Form */  
 
     #contact-form {
         margin: 2rem;
-    }
-
-    #contact-info h1 {
-        font-size: 1.75rem;
     }
 
     #contact-form h2 {
@@ -956,11 +963,55 @@ footer ul li a {
         border-radius: 6px;
     }
 
+/* 5b. Contact Info */ 
+
+    #contact-info h1 {
+        font-size: 1.75rem;
+    }
+
+    #contact-info {
+        border-radius: 6px;
+        border: 3px solid;
+        max-width: 400px;
+    }
+
+    #contact-info p {
+        font-size: 1.25rem;
+    }
+
+/* 6. FOOTER */  
+
+    #sm-icons {
+        margin-top: 3.5rem;
+        margin-left: 1.5rem;
+    }
+    
+    #sm-icons img {
+        padding-left: .75rem;
+        height: 1.5rem;
+    }
+    
+    footer h2 {
+        font-size: 1.25rem;
+    }
+    
+    footer ul {
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+    
+    #footer-nav {
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+    }
+
 }
 
 /* Medium Desktop Styling */
 
 @media screen and (min-width: 1200px) { 
+
+/* 2. HEADER */  
 
     header {
         border-radius: 0 0 1.75rem 1.75rem;
@@ -1000,6 +1051,10 @@ footer ul li a {
         width: 3.5rem;
     }
 
+/* 3. HOME PAGE */  
+
+/* 3c. Endless Banner */  
+
     #endless-banner {
         height: 400px;
     }
@@ -1023,6 +1078,8 @@ footer ul li a {
         height: 180px;
     }
 
+/* 3d. Sustainability Banner */  
+
     #sustainability-banner h1 {
         font-size: 4rem;
     }
@@ -1039,6 +1096,21 @@ footer ul li a {
         font-size: 1.75rem;
         width: 60%;
     }
+
+/* 4. PRODUCTS PAGE */  
+
+/* 4b. Assorted Banner */ 
+
+#assorted-banner button {
+    position: absolute;
+    bottom: 5.5%;
+    left: 22.5%;
+    padding: .5rem 6.5rem .7rem 6.5rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+/* 4c. Product Cards */ 
 
     .product-cards h2 {
         font-size: 3rem;
@@ -1091,14 +1163,75 @@ footer ul li a {
         font-size: 1.1rem;
     }
 
-    #assorted-banner button {
-        position: absolute;
-        bottom: 5.5%;
-        left: 22.5%;
-        padding: .5rem 6.5rem .7rem 6.5rem;
-        font-size: 1.5rem;
-        border-radius: 10px;
+/* 5. CONTACT PAGE */ 
+
+/* 5a. Contact Form */ 
+
+    #form-text {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 0;
+        margin-right: 4rem;
     }
+
+    #form-input {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-right: 4rem;
+    }
+
+    #contact-form {
+        margin: 3rem;
+    }
+
+    #contact-form h2 {
+        font-size: 2.25rem;
+    }
+
+    #contact-form h3 {
+        font-size: 1.75rem;
+    }
+
+    #contact-form input[type="text"], textarea {
+        font-size: 1.25rem;
+        border: 3px solid;
+        border-radius: 7px;
+    }
+
+    #contact-form textarea {
+        height: 10rem;
+    }
+
+    #contact-form input[type="submit"] {
+        padding: .6rem 3.5rem .8rem 3.5rem;
+        font-size: 1.25rem;
+        border-radius: 7px;
+    }
+
+/* 5b. Contact Info */ 
+
+    #contact-info {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-left: 1rem;
+        margin-bottom: 3.7rem;
+        border: 3px solid;
+        max-width: 100%;
+    }
+
+    #contact-info h1 {
+        font-size: 2.25rem;
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #contact-info p {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+
+
+/* 6. FOOTER */ 
 
     footer {
         padding: 1rem 0rem;
@@ -1128,72 +1261,13 @@ footer ul li a {
         margin-top: 1.5rem;
     }
 
-    #form-text {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-top: 0;
-        margin-right: 1rem;
-    }
-
-    #form-input {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin-right: 1rem;
-    }
-
-    #contact-info {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        margin-left: 1rem;
-        margin-bottom: 3.7rem;
-        border: 3px solid;
-        max-width: 100%;
-    }
-
-    #contact-info p {
-        font-size: 1.75rem;
-        padding: 1rem;
-    }
-
-    #contact-form {
-        margin: 3rem;
-    }
-
-    #contact-form h1 {
-        font-size: 2.5rem;
-        margin-top: .5rem;
-        margin-bottom: 1rem;
-    }
-    
-    #contact-form h2 {
-        font-size: 2.5rem;
-    }
-    
-    #contact-form h3 {
-        font-size: 1.75rem;
-    }
-
-    #contact-form input[type="text"], textarea {
-        font-size: 1.25rem;
-        border: 3px solid;
-        border-radius: 7px;
-    }
-
-    #contact-form textarea {
-        height: 10rem;
-    }
-
-    #contact-form input[type="submit"] {
-        padding: .6rem 3.5rem .8rem 3.5rem;
-        font-size: 1.25rem;
-        border-radius: 7px;
-    }
-
 }
 
 /* Large Desktop Styling */
 
 @media screen and (min-width: 1920px) { 
+
+/* 2. HEADER */ 
 
     header {
         border-radius: 0 0 3rem 3rem;
@@ -1227,6 +1301,10 @@ footer ul li a {
         width: 4.5rem;
     }
 
+/* 3. HOME PAGE */ 
+
+/* 3b. Product Cards */ 
+
     .product-card-logo {
         margin-bottom: 0;
         padding-top: 1.25rem;
@@ -1239,6 +1317,8 @@ footer ul li a {
     .product-cards-index div:first-of-type{
         padding: 2rem;
     }
+
+/* 3c. Endless Banner */ 
 
     #endless-banner {
         height: 600px;
@@ -1262,6 +1342,8 @@ footer ul li a {
     #endless-images {
         height: 350px;
     }
+
+/* 3d. Sustainability Banner */ 
 
     #sustainability-banner {
         height: 650px;
@@ -1288,6 +1370,21 @@ footer ul li a {
     #sustainability-banner h3 {
         font-size: 3rem;
     }
+
+/* 4. PRODUCTS PAGE */ 
+
+/* 4b. Assorted Banner */ 
+
+#assorted-banner button {
+    position: absolute;
+    bottom: 5.5%;
+    left: 22.5%;
+    padding: 1rem 12rem 1.2rem 12rem;
+    font-size: 2rem;
+    border-radius: 15px;
+}
+
+/* 4c. Product Cards */ 
 
     .product-cards h2 {
         font-size: 4.5rem;
@@ -1341,14 +1438,66 @@ footer ul li a {
         font-size: 2rem;
     }
 
-    #assorted-banner button {
-        position: absolute;
-        bottom: 5.5%;
-        left: 22.5%;
-        padding: 1rem 12rem 1.2rem 12rem;
-        font-size: 2rem;
-        border-radius: 15px;
+/* 5. CONTACT PAGE */ 
+
+/* 5a. Contact Form */ 
+
+    #form-text {
+        margin-right: 15rem;
     }
+
+    #form-input {
+        margin-right: 15rem;
+    }
+
+    #contact-form {
+        margin: 7rem;
+    }
+
+    #contact-form h2 {
+        font-size: 3.25rem;
+    }
+    
+    #contact-form h3 {
+        font-size: 2.25rem;
+    }
+
+    #contact-form input[type="text"], textarea {
+        font-size: 1.5rem;
+        border-radius: 8px;
+        padding: .5rem 0rem .7rem .5rem;
+    }
+
+    #contact-form textarea {
+        height: 15rem;
+        padding: .4rem 0rem 0rem .5rem;
+    }
+
+    #contact-form input[type="submit"] {
+        padding: .6rem 4rem .9rem 4rem;
+        font-size: 1.5rem;
+
+    }
+
+/* 5b. Contact Info */ 
+
+    #contact-info {
+        margin-bottom: 4.2rem;
+        border-radius: 8px;
+    }
+
+    #contact-info h1 {
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 2.25rem;
+    }
+
+    #contact-info p {
+        font-size: 2.25rem;
+        padding: 1.25rem;
+    }
+
+/* 6. FOOTER */ 
 
     footer {
         padding: 2rem 0rem;
@@ -1379,50 +1528,5 @@ footer ul li a {
         margin-top: 1.5rem;
     }
 
-    #contact-info {
-        border-radius: 10px;
-        margin-bottom: 4.2rem;
-        border-radius: 8px;
-    }
-
-    #contact-info p {
-        font-size: 2.25rem;
-        padding: 1.25rem;
-    }
-
-    #contact-form {
-        margin: 7rem;
-    }
-
-    #contact-form h1 {
-        font-size: 3rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-    
-    #contact-form h2 {
-        font-size: 3.25rem;
-    }
-    
-    #contact-form h3 {
-        font-size: 2.25rem;
-    }
-
-    #contact-form input[type="text"], textarea {
-        font-size: 1.5rem;
-        border-radius: 8px;
-        padding: .5rem 0rem .7rem .5rem;
-    }
-
-    #contact-form textarea {
-        height: 15rem;
-        padding: .4rem 0rem 0rem .5rem;
-    }
-
-    #contact-form input[type="submit"] {
-        padding: .6rem 4rem .9rem 4rem;
-        font-size: 1.5rem;
-
-    }
 
 }
