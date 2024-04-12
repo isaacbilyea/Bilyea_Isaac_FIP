@@ -44,7 +44,7 @@ html, body {
 }
 
 *, *::before, *::after {
-    box-sizing: inherit; 
+    box-sizing: inherit;
 }
   
 body, p, h1, h2, h3, h4, h5 {
@@ -67,6 +67,17 @@ a {
 button, input[type="submit"] {
 	border: none;
     font-family: 'Degular', sans-serif;
+}
+
+button:active,input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+button:hover, input[type="submit"]:hover {
+    cursor: pointer;
+    filter: brightness(90%) contrast(120%);
+    box-shadow: 2px 2px 1px rgba(136,136,136,0.5);
+    box-sizing: border-box;
 }
 
 h1 {
@@ -483,6 +494,13 @@ header {
     font-size: 0.475rem;
     font-weight: 600;
 }
+
+#assorted-banner button:hover {
+    background-color: #577e65;
+    box-shadow: 2px 2px 1px rgba(136,136,136,0.5);
+    box-sizing: border-box;
+}
+
 
 /* 4c. Product Cards */
 
