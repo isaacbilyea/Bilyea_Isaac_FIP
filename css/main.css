@@ -205,6 +205,85 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.product-label {
+    display: none;
+    border-radius: 9px;
+    margin-top: 1rem;
+}
+
+.product-label h3 {
+    display: none;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: .15rem 0rem .25rem 0rem;
+}
+
+#pineapple-label {
+    color: #EBCE56;
+    background-color: #F7EBBB;
+}
+
+#orange-label {
+    color: #F79420;
+    background-color: #FCD4A6;
+}
+
+#grapefruit-label {
+    color:#F15B57;
+    background-color: #F8BDBC;
+}
+
+#passionfruit-label {
+    color:#803960;
+    background-color: #CCB0BF;
+}
+
+.product-cards-index:hover .product-card-logo {
+    display: none;
+}
+
+.product-cards-index:hover .product-label {
+    display: block;
+    animation: slideInLabel .4s ease-out;
+}
+
+.product-cards-index:hover h3 {
+    display: block;
+    animation: fadeInLabel .4s ease-out;
+}
+
+@keyframes slideInLabel {
+    0% {
+        width: 20%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInLabel {
+    0% {
+        opacity: 0;
+        white-space: nowrap;
+    }
+
+    50% {
+        opacity: 0;
+        white-space: nowrap;
+    }
+
+    100% {
+        opacity: 1;
+        white-space: nowrap;
+    }
+}
+
+.card-backgrounds-index {
+    padding: 1.5rem;
 }
 
 .product-cards-index img:first-child {
@@ -216,6 +295,14 @@ header {
     width: 20%;
     padding-top: 1rem;
 }
+
+.info-wrapper {
+    position: absolute;
+    right: 13%;
+    top: 7%;
+    width: 1.25rem;
+}
+
 
 /* 3c. Endless Banner */
 
@@ -785,6 +872,31 @@ footer ul li a {
     .product-cards-index {
         margin-top: .5rem;
     }
+
+    .product-label {
+        border-radius: 10px;
+        margin: 1.5rem 1rem 0.5rem 1rem;
+    }
+    
+    .product-label h3 {
+        font-size: 2.25rem;
+        padding: .5rem 0rem .7rem 0rem;
+    }
+
+    @keyframes slideInLabel {
+        0% {
+            width: 20%;
+        }
+    
+        100% {
+
+            width: calc(100% - 2rem);
+        }
+    }
+    
+    .card-backgrounds-index {
+        padding: 2.5rem;
+    }
     
     .product-cards-index img:first-child {
         border-radius: 15px;
@@ -799,6 +911,12 @@ footer ul li a {
         margin: 0.5rem 1rem 0.5rem 0.5rem;
     }
 
+    .info-wrapper {
+        right: 7.5%;
+        top: 4%;
+        width: 2.5rem;
+    }
+    
 /* 3c. Endless Banner */   
 
     #endless-banner {
@@ -1053,6 +1171,23 @@ footer ul li a {
 
 /* 3. HOME PAGE */  
 
+/* 3b. Product Cards */  
+
+    .product-label h3 {
+        font-size: 1.5rem;
+        padding: .5rem 0rem .65rem 0rem;
+    }
+
+    .card-backgrounds-index {
+        padding: 2rem;
+    }
+
+    .info-wrapper {
+        right: 9%;
+        top: 5%;
+        width: 1.75rem;
+    }
+
 /* 3c. Endless Banner */  
 
     #endless-banner {
@@ -1305,17 +1440,33 @@ footer ul li a {
 
 /* 3b. Product Cards */ 
 
+    .product-label {
+        border-radius: 10px;
+        margin: 2rem 1rem 0rem 1rem;
+    }
+
+    .product-label h3 {
+        font-size: 2.75rem;
+        padding: .55rem 0rem .9rem 0rem;
+    }
+
     .product-card-logo {
         margin-bottom: 0;
-        padding-top: 1.25rem;
+        padding-top: 1.5rem;
     }
 
     .product-cards-index {
         padding: 2rem;
     }
 
-    .product-cards-index div:first-of-type{
-        padding: 2rem;
+    .card-backgrounds-index {
+        padding: 3.5rem;
+    }
+
+    .info-wrapper {
+        right: 9.5%;
+        top: 5.5%;
+        width: 3.5rem;
     }
 
 /* 3c. Endless Banner */ 
@@ -1375,14 +1526,14 @@ footer ul li a {
 
 /* 4b. Assorted Banner */ 
 
-#assorted-banner button {
-    position: absolute;
-    bottom: 5.5%;
-    left: 22.5%;
-    padding: 1rem 12rem 1.2rem 12rem;
-    font-size: 2rem;
-    border-radius: 15px;
-}
+    #assorted-banner button {
+        position: absolute;
+        bottom: 5.5%;
+        left: 22.5%;
+        padding: 1rem 12rem 1.2rem 12rem;
+        font-size: 2rem;
+        border-radius: 15px;
+    }
 
 /* 4c. Product Cards */ 
 
