@@ -475,6 +475,50 @@ header {
     width: 60%;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+}
+
+.modal-con {
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 50%;
+}
+
+.modal-header {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #F79420;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.modal-text {
+    padding: 2rem;
+    font-size: 1rem;
+    color: #F79420;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    margin-top: 50%;
+    right: 14%;
+    cursor: pointer;
+    color: #F79420;
+    font-size: 2rem;
+}
+
+.close-button:hover {
+    color: black;
+    cursor: pointer;
+}
+
 /* 4. PRODUCTS PAGE */
 
 /* 4a. Products Hero */
@@ -1050,6 +1094,24 @@ footer ul li a {
         padding-top: 1rem;
     }
 
+    .modal-con {
+        margin-top: 30%;
+    }
+    
+    .modal-header {
+        font-size: 2.5rem;
+    }
+    
+    .modal-text {
+        font-size: 1.5rem;
+    }
+    
+    .close-button {
+        margin-top: 29%;
+        right: 12%;
+        font-size: 3rem;
+    }
+
 /* 4. PRODUCTS PAGE */  
 
 /* 4a. Products Hero */  
@@ -1313,6 +1375,24 @@ footer ul li a {
     #sustainability-banner h3 {
         font-size: 1.75rem;
         width: 60%;
+    }
+
+    .modal-con {
+        margin-top: 25%;
+    }
+    
+    .modal-header {
+        font-size: 3rem;
+    }
+    
+    .modal-text {
+        font-size: 2rem;
+    }
+    
+    .close-button {
+        margin-top: 24.5%;
+        right: 12%;
+        font-size: 3.5rem;
     }
 
 /* 4. PRODUCTS PAGE */  
@@ -1608,6 +1688,25 @@ footer ul li a {
     
     #sustainability-banner h3 {
         font-size: 3rem;
+    }
+
+    .modal-con {
+        margin-top: 15%;
+        padding: 2rem;
+    }
+    
+    .modal-header {
+        font-size: 5rem;
+    }
+    
+    .modal-text {
+        font-size: 3rem;
+    }
+    
+    .close-button {
+        margin-top: 15%;
+        right: 11.5%;
+        font-size: 4rem;
     }
 
 /* 4. PRODUCTS PAGE */ 
