@@ -83,6 +83,10 @@ button:hover, input[type="submit"]:hover {
 h1 {
     font-weight: 800;
 }
+
+#body-background {
+    background-color: #FFFFF0;
+}
  
 /* 2. HEADER */
 
@@ -376,14 +380,14 @@ header {
     overflow: hidden;
 }
 
-#endless-banner h1 {
+#endless-banner h2 {
     font-weight: 800;
     width: 80%;
     margin: 1rem auto 0 auto;
     font-size: 1.75rem;
 }
 
-#endless-banner h2 {
+#endless-banner h3 {
     font-weight: 500;
     margin-top: 0.25rem;
     font-size: 1.1rem;
@@ -450,14 +454,14 @@ header {
     width: 5rem;
 }
 
-#sustainability-banner h1 {
+#sustainability-banner h2 {
     font-weight: 800;
     width: 80%;
     margin: 1rem auto 0 auto;
     font-size: 2.5rem;
 }
 
-#sustainability-banner h2 {
+#sustainability-banner h3 {
     margin: 0 auto;
     font-weight: 500;
     font-size: 1.1rem;
@@ -466,7 +470,7 @@ header {
     width: 80%;
 }
 
-#sustainability-banner h3 {
+#sustainability-banner h4 {
     margin: 0 auto;
     font-size: 1.3rem;
     font-weight: 500;
@@ -826,7 +830,7 @@ header {
     padding: .25rem;
 }
 
-#contact-info h1 {
+#contact-info h2 {
     padding: .5rem;
 }
 
@@ -914,12 +918,13 @@ footer ul li a {
         top: 3.5%;
     }
     
-    #main-nav h1 {
+    #main-nav h2 {
         position: absolute;
         color: white;
         left: 3.5%;
         font-size: 1.75rem;
         margin-bottom: .5rem;
+        font-weight: 800;
     }
 
     #main-nav button {
@@ -1052,7 +1057,7 @@ footer ul li a {
         height: 160px;
     }
 
-    #endless-banner h2{
+    #endless-banner h3{
         font-size: 1.75rem;
     }
 
@@ -1078,17 +1083,17 @@ footer ul li a {
         width: 9rem;
     }
     
-    #sustainability-banner h1 {
+    #sustainability-banner h2 {
         font-size: 3rem;
     }
     
-    #sustainability-banner h2 {
+    #sustainability-banner h3 {
         font-size: 1.5rem;
         width: 60%;
         padding-bottom: 1rem;
     }
     
-    #sustainability-banner h3 {
+    #sustainability-banner h4 {
         font-size: 1.5rem;
         width: 50%;
         padding-top: 1rem;
@@ -1221,7 +1226,7 @@ footer ul li a {
 
 /* 5b. Contact Info */ 
 
-    #contact-info h1 {
+    #contact-info h2 {
         font-size: 1.75rem;
     }
 
@@ -1279,18 +1284,15 @@ footer ul li a {
         width: 2rem;
     }
     
-    #main-nav h1 {
+    #main-nav h2 {
         left: 2.5%;
+        font-size: 2.5rem;
     }
 
     #main-nav {
         padding: 1rem;
     }
 
-    #main-nav h1{
-        font-size: 2.5rem;
-    }
-    
     #main-nav ul li {
         margin: 0rem 2.5rem;
     }
@@ -1339,12 +1341,12 @@ footer ul li a {
         height: 400px;
     }
 
-    #endless-banner h1 {
+    #endless-banner h2 {
         font-size: 2.8rem;
         margin-top: 1.5rem;
     }
 
-    #endless-banner h2 {
+    #endless-banner h3 {
         font-size: 2.8rem;
     }
 
@@ -1360,11 +1362,11 @@ footer ul li a {
 
 /* 3d. Sustainability Banner */  
 
-    #sustainability-banner h1 {
+    #sustainability-banner h2 {
         font-size: 4rem;
     }
 
-    #sustainability-banner h2 {
+    #sustainability-banner h3 {
         width: 100%;
     }
 
@@ -1372,7 +1374,7 @@ footer ul li a {
         width: auto;
     }
 
-    #sustainability-banner h3 {
+    #sustainability-banner h4 {
         font-size: 1.75rem;
         width: 60%;
     }
@@ -1517,7 +1519,7 @@ footer ul li a {
         max-width: 100%;
     }
 
-    #contact-info h1 {
+    #contact-info h2 {
         font-size: 2.25rem;
         margin-top: .5rem;
         margin-bottom: 1.5rem;
@@ -1577,7 +1579,7 @@ footer ul li a {
         width: 3rem;
     }
     
-    #main-nav h1 {
+    #main-nav h2 {
         left: 2.5%;
         font-size: 4rem;
         margin-bottom: 1rem;
@@ -1643,11 +1645,11 @@ footer ul li a {
         height: 600px;
     }
 
-    #endless-banner h1 {
+    #endless-banner h2 {
         font-size: 4rem;
     }
 
-    #endless-banner h2 {
+    #endless-banner h3 {
         font-size: 4rem;
     }
 
@@ -1668,11 +1670,11 @@ footer ul li a {
         height: 650px;
     }
 
-    #sustainability-banner h1 {
+    #sustainability-banner h2 {
         font-size: 7rem;
     }
 
-    #sustainability-banner h2 {
+    #sustainability-banner h3 {
         font-size: 3rem;
         margin-top: -1.5rem;
     }
@@ -1686,7 +1688,7 @@ footer ul li a {
         width: 11rem;
     }
     
-    #sustainability-banner h3 {
+    #sustainability-banner h4 {
         font-size: 3rem;
     }
 
@@ -1824,7 +1826,7 @@ footer ul li a {
         border-radius: 8px;
     }
 
-    #contact-info h1 {
+    #contact-info h2 {
         font-size: 3rem;
         margin-top: 1rem;
         margin-bottom: 2.25rem;
