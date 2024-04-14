@@ -840,8 +840,17 @@ header {
     padding-bottom: 1rem;
 }
 
+#moving-logo {
+    bottom: 45%;
+    position: absolute;
+    width: 100%;
+}
 
-/* FOOTER */
+#moving-logo image {
+    width: 200px;
+}
+
+/* 6. FOOTER */
 
 #home-footer {
     background: url(../images/home-footer.svg) no-repeat;
@@ -856,6 +865,8 @@ header {
 #contact-footer {
     background: url(../images/contact-footer.svg) no-repeat;
     background-size: cover;
+    margin-top: auto;
+    position: relative;
 }
 
 footer {
@@ -1272,7 +1283,12 @@ footer ul li a {
         font-size: 1.25rem;
     }
 
+
 /* 6. FOOTER */  
+
+    #contact-footer {
+        margin-top: 5rem;
+    }
 
     #sm-icons {
         margin-top: 3.5rem;
@@ -1619,11 +1635,18 @@ footer ul li a {
         padding: 1rem;
     }
 
+    #moving-logo {
+        bottom: 43%;
+    }
 
 /* 6. FOOTER */ 
 
     footer {
         padding: 1rem 0rem;
+    }
+
+    #contact-footer {
+        margin-top: 7rem;
     }
 
     #sm-icons {
@@ -1968,6 +1991,10 @@ footer ul li a {
     #contact-info p {
         font-size: 2.25rem;
         padding: 1.25rem;
+    }
+
+    #moving-logo {
+        bottom: 49%;
     }
 
 /* 6. FOOTER */ 
