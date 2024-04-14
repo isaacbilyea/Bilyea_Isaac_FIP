@@ -87,7 +87,7 @@ h1 {
 #body-background {
     background-color: #FFFFF0;
 }
- 
+
 /* 2. HEADER */
 
 header {
@@ -226,6 +226,7 @@ header {
 .product-label {
     display: none;
     border-radius: 9px;
+    height: 100%;
     margin-top: 1rem;
 }
 
@@ -261,7 +262,9 @@ header {
 }
 
 .product-cards-index:hover .product-label {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation: slideInLabel .4s ease-out;
 }
 
@@ -313,7 +316,7 @@ header {
 
 .info-wrapper {
     position: absolute;
-    right: 13%;
+    right: 12.5%;
     top: 7%;
     width: 1.25rem;
 }

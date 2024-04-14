@@ -1,4 +1,11 @@
 (() => {
+
+    //VARIABLES
+
+    const infoIcons = document.querySelectorAll('.info-icon'),
+          sustainabilityIcons = document.querySelectorAll('#sustainability-banner img'),
+          closeButton = document.querySelector('.close-button');
+    
     const productInfo = [
         "This things got so much zest, it's like your taste buds won a vacation but forgot to tell you",
         "Orange you glad to meet this soda? It's got so much flavour, some would even call it - crush worthy",
@@ -17,9 +24,7 @@
         text: "Taste nature with our sodas, flavored exclusively with all-natural extracts. Every sip offers a pure, delicious experience, free from artificial flavors or additives, ensuring your refreshment is naturally wholesome." }
     ];
 
-    const infoIcons = document.querySelectorAll('.info-icon'),
-          sustainabilityIcons = document.querySelectorAll('#sustainability-banner img'),
-          closeButton = document.querySelector('.close-button');
+    // FUNCTIONS
 
     infoIcons.forEach((icon, index) => {
         icon.addEventListener('click', function() {
@@ -55,31 +60,12 @@
         });
     });
 
+    //EVENT LISTENERS 
+
     closeButton.addEventListener('click', function() {
         const modal = document.getElementById('modal');
         modal.style.display = 'none';
     });
 
-
-    const endlessBanner = document.getElementById('endless-images');
-let scrollWidth = endlessBanner.scrollWidth / 3; // Divide by 2 if items are duplicated
-
-function animateEndless() {
-    endlessBanner.style.transform = 'translateX(0)';
-    endlessBanner.style.transition = 'transform 0s'; // Reset transition
-
-    setTimeout(() => {
-        endlessBanner.style.transform = `translateX(-${scrollWidth}px)`;
-        endlessBanner.style.transition = 'transform 10s linear infinite';
-    }, 100);
-}
-
-// Initial animation setup
-animateEndless();
-
-// Recalculate and reset animation on window resize
-window.addEventListener('resize', () => {
-    scrollWidth = endlessBanner.scrollWidth / 2;
-    animateEndless();
-});
+    
 })();
