@@ -94,6 +94,7 @@ header {
     color: white;
     border-radius: 0 0 1.25rem 1.25rem;
     padding: 0 1.5rem;
+    position: relative;
 }
 
 #home-header {
@@ -112,7 +113,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 1rem;
 }
 
@@ -122,7 +122,7 @@ header {
     transition: all .2s ease;
     position: absolute;
     left: 5%;
-    top: 2.25%;
+    margin-top: .7rem;
 } 
 
 #main-nav input:checked ~ #burger-con {
@@ -180,10 +180,11 @@ header {
     margin: 0 auto;
 }
 
-#header-logo h1 {
+#header-logo h2 {
     padding-right: .5rem;
     font-size: 1.5rem;
     padding-bottom: .3rem;
+    font-weight: 800;
 }
 
 #header-logo img {
@@ -197,9 +198,9 @@ header {
 #cart {
     position: absolute;
     right: 5%;
+    margin-top: .5rem;
     width: 1.25rem;
     cursor: pointer;
-    top: 2%;
 }
 
 
@@ -918,9 +919,13 @@ footer ul li a {
     #cart {
         width: 1.5rem;
         right: 3.5%;
-        top: 3.5%;
+        margin-top: 0rem;
     }
-    
+
+    #main-nav {
+        justify-content: center;
+    }
+
     #main-nav h2 {
         position: absolute;
         color: white;
@@ -1294,7 +1299,6 @@ footer ul li a {
 
     #cart {
         right: 2.5%;
-        top: 3.75%;
         width: 2rem;
     }
     
@@ -1600,7 +1604,6 @@ footer ul li a {
 
     #cart {
         right: 2.5%;
-        top: 4%;
         width: 3rem;
     }
     
