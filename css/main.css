@@ -1158,6 +1158,7 @@ footer ul li a {
     .product-cards-index {
         margin-top: .5rem;
         border-radius: 15px;
+        padding: 1rem;
     }
 
     .product-label {
@@ -1360,8 +1361,13 @@ footer ul li a {
         border-radius: 12px;
     }
 
+    .product-cards img {
+        padding: 1rem;
+    }
+
     .product-cards button {
         border-radius: 7px;
+        font-size: 0.9rem;
     }
 
     .card-right-con {
@@ -1371,6 +1377,12 @@ footer ul li a {
     .product-cards h2 {
         font-size: 1.7rem;
     }
+
+    .product-cards h3 {
+        font-size: 1.4rem;
+        margin-top: -.2rem;
+    }
+
 
     .flavour-text {
         font-size: 0.9rem;
@@ -1674,7 +1686,7 @@ footer ul li a {
     }
 
     .product-cards h2 {
-        font-size: 3rem;
+        font-size: 2.75rem;
         line-height: 3rem;
     }
 
