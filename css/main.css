@@ -557,7 +557,9 @@ header {
     color: white;
     z-index: 2;
     width: 100%;
-    margin-right: 3.5rem;
+    top: 30%;
+    left: 44%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -573,7 +575,7 @@ header {
 #hero-video button {
     background-color: #F15B57;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 auto;
     margin-top: 1rem;
     border-radius: 5px;
@@ -1141,19 +1143,12 @@ footer ul li a {
 /* 4a. Products Hero */  
 
     #video-text {
-        position: absolute;
-        color: white;
-        z-index: 2;
-        width: 100%;
-        margin-right: 7rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        top: 25%;
+        left: 43.5%;
     }
 
-    #hero-video {
-        margin-top: .5rem;
+    #hero-video video {
+        margin-top: 1rem;
     }
     
     #hero-video h1 {
@@ -1162,7 +1157,6 @@ footer ul li a {
     }
     
     #hero-video button {
-        font-weight: 600;
         margin-top: 1.5rem;
         width: 100%;
         border-radius: 10px;
@@ -1171,7 +1165,6 @@ footer ul li a {
     }
 
     
-
 /* 4b. Assorted Banner */  
 
 #assorted-banner {
@@ -1427,6 +1420,25 @@ footer ul li a {
     }
 
 /* 4. PRODUCTS PAGE */  
+
+
+/* 4a. Products Hero */ 
+
+#video-text {
+    top: 30%;
+    left: 41.5%;
+}
+
+#hero-video h1 {
+    line-height: 5.5rem;
+    font-size: 5.5rem;
+}
+
+#hero-video button {
+    font-size: 1.75rem;
+    padding: .7rem 1rem .9rem 1rem;
+}
+
 
 /* 4b. Assorted Banner */ 
 
@@ -1751,6 +1763,19 @@ footer ul li a {
     }
 
 /* 4. PRODUCTS PAGE */ 
+
+/* 4a. Products Hero */ 
+
+    #hero-video h1 {
+        line-height: 9rem;
+        font-size: 9rem;
+    }
+
+    #hero-video button {
+        font-size: 3rem;
+        padding: 1rem .5rem 1.2rem .5rem;
+        margin-top: 3rem;
+    }
 
 /* 4b. Assorted Banner */ 
 
