@@ -1,5 +1,6 @@
 # Final Integrated Project - Isaac Bilyea
 
+Welcome to my project repository for the Quatro brand refresh. This project involves updating the brand design, developing a new website, and creating promotional media. Thanks for visiting!
 
 ## Installation
 
