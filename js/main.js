@@ -60,4 +60,26 @@
         modal.style.display = 'none';
     });
 
+
+    const endlessBanner = document.getElementById('endless-images');
+let scrollWidth = endlessBanner.scrollWidth / 3; // Divide by 2 if items are duplicated
+
+function animateEndless() {
+    endlessBanner.style.transform = 'translateX(0)';
+    endlessBanner.style.transition = 'transform 0s'; // Reset transition
+
+    setTimeout(() => {
+        endlessBanner.style.transform = `translateX(-${scrollWidth}px)`;
+        endlessBanner.style.transition = 'transform 10s linear infinite';
+    }, 100);
+}
+
+// Initial animation setup
+animateEndless();
+
+// Recalculate and reset animation on window resize
+window.addEventListener('resize', () => {
+    scrollWidth = endlessBanner.scrollWidth / 2;
+    animateEndless();
+});
 })();

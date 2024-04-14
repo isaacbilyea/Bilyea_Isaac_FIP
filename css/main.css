@@ -409,7 +409,7 @@ header {
     margin-top: 0.5rem;
     position: relative;
     bottom: -1rem;
-    animation: endless 5s linear infinite;
+    animation: endless 2.75s linear infinite;
 }
 
 #endless-images img{
@@ -423,11 +423,11 @@ header {
 
 @keyframes endless {
     0% {
-        transform: (translateX(0%))
+        transform: translateX(0%);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-60%);
     }
 }
 
@@ -1055,10 +1055,21 @@ footer ul li a {
 
     #endless-images {
         height: 160px;
+        animation: endless 2.5s linear infinite;
     }
 
     #endless-banner h3{
         font-size: 1.75rem;
+    }
+
+    @keyframes endless {
+        0% {
+            transform: translateX(0%);
+        }
+    
+        100% {
+            transform: translateX(-46%);
+        }
     }
 
 /* 3d. Sustainability Banner */  
@@ -1358,6 +1369,17 @@ footer ul li a {
 
     #endless-images {
         height: 180px;
+        animation: endless 2s linear infinite;
+    }
+
+    @keyframes endless {
+        0% {
+            transform: translateX(0%);
+        }
+    
+        100% {
+            transform: translateX(-32%);
+        }
     }
 
 /* 3d. Sustainability Banner */  
@@ -1662,6 +1684,17 @@ footer ul li a {
 
     #endless-images {
         height: 350px;
+        animation: endless 2.5s linear infinite;
+    }
+
+    @keyframes endless {
+        0% {
+            transform: translateX(0%);
+        }
+    
+        100% {
+            transform: translateX(-38%);
+        }
     }
 
 /* 3d. Sustainability Banner */ 
