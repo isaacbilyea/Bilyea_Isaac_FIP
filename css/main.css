@@ -1883,8 +1883,17 @@ footer ul li a {
                 transform: translateX(-32.5%);
             }
         }
-    
-    
+
+    /* 3d. Sustainability Banner */
+
+        .modal-con {
+            margin-top: 15%;
+        }
+        
+        .close-button {
+            margin-top: 14.25%;
+        }
+        
     /* 4. PRODUCTS PAGE */
     
     /* 4a. Products Hero */
