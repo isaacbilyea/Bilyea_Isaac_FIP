@@ -209,14 +209,14 @@ header {
 /* 3a. Main Hero */
 
 #main-hero {
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0.5rem 0;
 }
 
 /* 3b. Product Cards */
 
 .product-cards-index {
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -226,7 +226,7 @@ header {
 
 .product-label {
     display: none;
-    border-radius: 9px;
+    border-radius: 6px;
     height: 100%;
     margin-top: 1rem;
 }
@@ -303,10 +303,11 @@ header {
 
 .card-backgrounds-index {
     padding: 1.5rem;
+    border-radius: 10px;
 }
 
 .product-cards-index img:first-child {
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 1rem;
 }
 
@@ -378,7 +379,7 @@ header {
 
 #endless-banner {
     background: linear-gradient(#6D9D7E, #A8D4A6);
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     color: white;
     overflow: hidden;
@@ -439,7 +440,7 @@ header {
 
 #sustainability-banner {
     background: #FCD4A6;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -532,9 +533,8 @@ header {
 /* 4a. Products Hero */
 
 #product-hero {
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0.5rem 0;
-
 }
 
 #hero-video {
@@ -546,7 +546,7 @@ header {
 }
 
 #hero-video video {
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 0.5rem;
     z-index: 1;
     width: 100%;
@@ -633,11 +633,11 @@ header {
 }
 
 .product-cards {
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .product-cards h2 {
@@ -651,18 +651,18 @@ header {
 }
 
 .product-cards button {
-    border-radius: 10px;
+    border-radius: 7px;
     font-weight: 700;
     font-size: 0.9rem;
 }
 
 .product-cards img {
-    border-radius: 15px;
     padding: 1rem;
 }
 
 .card-backgrounds {
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .cart-button {
@@ -697,7 +697,6 @@ header {
 
 #pineapple-background {
     background-color: #F7EBBB;
-    border-radius: 15px;
 }
 
 #pineapple-card button {
@@ -711,7 +710,6 @@ header {
 
 #orange-background {
     background-color: #FCD4A6;
-    border-radius: 15px;
 }
 
 #orange-card button {
@@ -725,7 +723,6 @@ header {
 
 #grapefruit-background {
     background-color: #F8BDBC;
-    border-radius: 15px;
 }
 
 #grapefruit-card button {
@@ -739,7 +736,6 @@ header {
 
 #passionfruit-background {
     background-color: #CCB0BF;
-    border-radius: 15px;
 }
 
 #passionfruit-card button {
@@ -915,7 +911,7 @@ footer ul li a {
 /* 2. HEADER */
 
     header {
-        border-radius: 0 0 1.5rem 1.5rem;
+        border-radius: 0 0 2rem 2rem;
     }
 
     #cart {
@@ -993,12 +989,14 @@ footer ul li a {
 
     #main-hero {
         margin-top: 1rem;
+        border-radius: 15px;
     }
 
 /* 3b. Product Cards */
 
     .product-cards-index {
         margin-top: .5rem;
+        border-radius: 15px;
     }
 
     .product-label {
@@ -1024,10 +1022,10 @@ footer ul li a {
     
     .card-backgrounds-index {
         padding: 2.5rem;
+        border-radius: 15px;
     }
     
     .product-cards-index img:first-child {
-        border-radius: 15px;
         padding: 2rem;
     }
 
@@ -1056,6 +1054,7 @@ footer ul li a {
 
     #endless-banner {
         margin-top: 0.5rem;
+        border-radius: 15px;
         height: 300px;
     }
 
@@ -1086,6 +1085,8 @@ footer ul li a {
 
     #sustainability-banner {
         margin-top: 1rem;
+        border-radius: 15px;
+        margin-bottom: 1rem;
     }
 
     #sustainability-banner div {
@@ -1149,6 +1150,7 @@ footer ul li a {
 
     #hero-video video {
         margin-top: 1rem;
+        border-radius: 15px;
     }
     
     #hero-video h1 {
@@ -1169,6 +1171,11 @@ footer ul li a {
 
 #assorted-banner {
     margin: 0.5rem 0;
+    border-radius: 15px;
+}
+
+#assorted-banner img {
+    border-radius: 15px;
 }
 
 #assorted-banner button {
@@ -1182,6 +1189,19 @@ footer ul li a {
 
 
 /* 4c. Product Cards */  
+
+    .product-cards {
+        border-radius: 15px;
+        margin-bottom: 1rem;
+    }
+
+    .card-backgrounds {
+        border-radius: 12px;
+    }
+
+    .product-cards button {
+        border-radius: 7px;
+    }
 
     .card-right-con {
         margin-left: -.5rem;
@@ -1287,11 +1307,10 @@ footer ul li a {
 /* 2. HEADER */  
 
     header {
-        border-radius: 0 0 1.75rem 1.75rem;
+        border-radius: 0 0 2.25rem 2.25rem;
     }
 
     #cart {
-        right: 2.5%;
         width: 2rem;
     }
     
@@ -1322,7 +1341,17 @@ footer ul li a {
 
 /* 3. HOME PAGE */  
 
+/* 3a. Main Hero */  
+
+    #main-hero {
+        border-radius: 20px;
+    }
+
 /* 3b. Product Cards */  
+
+    .product-cards-index {
+        border-radius: 20px;
+    }
 
     .product-label h3 {
         font-size: 1.5rem;
@@ -1331,6 +1360,7 @@ footer ul li a {
 
     .card-backgrounds-index {
         padding: 2rem;
+        border-radius: 20px;
     }
 
     .info-wrapper {
@@ -1350,8 +1380,9 @@ footer ul li a {
 
     #endless-banner {
         height: 400px;
+        border-radius: 20px;
     }
-
+    
     #endless-banner h2 {
         font-size: 2.8rem;
         margin-top: 1.5rem;
@@ -1384,6 +1415,10 @@ footer ul li a {
 
 /* 3d. Sustainability Banner */  
 
+    #sustainability-banner {
+        border-radius: 20px;
+    }
+
     #sustainability-banner h2 {
         font-size: 4rem;
     }
@@ -1403,6 +1438,7 @@ footer ul li a {
 
     .modal-con {
         margin-top: 25%;
+        border-radius: 15px;
     }
     
     .modal-header {
@@ -1424,34 +1460,52 @@ footer ul li a {
 
 /* 4a. Products Hero */ 
 
-#video-text {
-    top: 30%;
-    left: 41.5%;
-}
+    #hero-video video {
+        border-radius: 20px;
+    }
 
-#hero-video h1 {
-    line-height: 5.5rem;
-    font-size: 5.5rem;
-}
+    #video-text {
+        top: 30%;
+        left: 41.5%;
+    }
 
-#hero-video button {
-    font-size: 1.75rem;
-    padding: .7rem 1rem .9rem 1rem;
-}
+    #hero-video h1 {
+        line-height: 5.5rem;
+        font-size: 5.5rem;
+    }
+
+    #hero-video button {
+        font-size: 1.75rem;
+        padding: .7rem 1rem .9rem 1rem;
+    }
 
 
 /* 4b. Assorted Banner */ 
 
-#assorted-banner button {
-    position: absolute;
-    bottom: 5.5%;
-    left: 22.5%;
-    padding: .5rem 6.5rem .7rem 6.5rem;
-    font-size: 1.5rem;
-    border-radius: 10px;
-}
+    #assorted-banner img {
+        border-radius: 20px;
+    }
+
+    #assorted-banner button {
+        position: absolute;
+        bottom: 5.5%;
+        left: 22.5%;
+        padding: .5rem 6.5rem .7rem 6.5rem;
+        font-size: 1.5rem;
+        border-radius: 10px;
+    }
 
 /* 4c. Product Cards */ 
+
+    .product-cards {
+        border-radius: 20px;
+        padding: 1.3rem;
+    }
+
+    .card-backgrounds {
+        border-radius: 13px;
+        margin-bottom: 1.3rem;
+    }
 
     .product-cards h2 {
         font-size: 3rem;
@@ -1476,16 +1530,8 @@ footer ul li a {
         margin-right: 1rem;
     }
 
-    .product-cards {
-        padding: 1.3rem;
-    }
-
     .product-cards img {
         padding: 2rem;
-    }
-
-    .card-backgrounds {
-        margin-bottom: 1.3rem;
     }
 
     .product-card-text {
@@ -1502,6 +1548,7 @@ footer ul li a {
 
     .product-cards button {
         font-size: 1.1rem;
+        border-radius: 13px;
     }
 
 /* 5. CONTACT PAGE */ 
@@ -1554,10 +1601,11 @@ footer ul li a {
     #contact-info {
         grid-row-start: 1;
         grid-row-end: 3;
-        margin-left: 1rem;
+        margin-left: .5rem;
         margin-bottom: 3.7rem;
         border: 3px solid;
         max-width: 100%;
+        border-radius: 7px;
     }
 
     #contact-info h2 {
@@ -1567,7 +1615,7 @@ footer ul li a {
     }
 
     #contact-info p {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         padding: 1rem;
     }
 
@@ -1611,7 +1659,7 @@ footer ul li a {
 /* 2. HEADER */ 
 
     header {
-        border-radius: 0 0 3rem 3rem;
+        border-radius: 0 0 3em 3rem;
     }
 
     #cart {
@@ -1643,10 +1691,16 @@ footer ul li a {
 
 /* 3. HOME PAGE */ 
 
+/* 3a. Main Hero */ 
+
+    #main-hero {
+        border-radius: 25px;
+    }
+
 /* 3b. Product Cards */ 
 
     .product-label {
-        border-radius: 10px;
+        border-radius: 15px;
         margin: 2rem 1rem 0rem 1rem;
     }
 
@@ -1662,6 +1716,7 @@ footer ul li a {
 
     .product-cards-index {
         padding: 2rem;
+        border-radius: 25px;
     }
 
     .card-backgrounds-index {
@@ -1683,6 +1738,7 @@ footer ul li a {
 
     #endless-banner {
         height: 600px;
+        border-radius: 25px;
     }
 
     #endless-banner h2 {
@@ -1719,6 +1775,7 @@ footer ul li a {
 
     #sustainability-banner {
         height: 650px;
+        border-radius: 25px;
     }
 
     #sustainability-banner h2 {
@@ -1732,7 +1789,6 @@ footer ul li a {
 
     #sustainability-banner img {
         height: 8rem;
-
     }
     
     #sustainability-banner div:nth-child(5) img {
@@ -1746,6 +1802,7 @@ footer ul li a {
     .modal-con {
         margin-top: 15%;
         padding: 2rem;
+        border-radius: 20px;
     }
     
     .modal-header {
@@ -1765,6 +1822,10 @@ footer ul li a {
 /* 4. PRODUCTS PAGE */ 
 
 /* 4a. Products Hero */ 
+
+    #hero-video video {
+        border-radius: 25px;
+    }
 
     #hero-video h1 {
         line-height: 9rem;
@@ -1786,6 +1847,10 @@ footer ul li a {
         padding: 1rem 12rem 1.2rem 12rem;
         font-size: 2rem;
         border-radius: 15px;
+    }
+
+    #assorted-banner img {
+        border-radius: 25px;
     }
 
 /* 4c. Product Cards */ 
@@ -1816,6 +1881,7 @@ footer ul li a {
 
     .product-cards {
         padding: 2rem;
+        border-radius: 25px;
     }
 
     .product-cards img {
@@ -1840,6 +1906,7 @@ footer ul li a {
 
     .product-cards button {
         font-size: 2rem;
+        border-radius: 16px;
     }
 
 /* 5. CONTACT PAGE */ 
@@ -1868,7 +1935,8 @@ footer ul li a {
 
     #contact-form input[type="text"], textarea {
         font-size: 1.5rem;
-        border-radius: 8px;
+        border-radius: 10px;
+        border: 4px solid #803960;
         padding: .5rem 0rem .7rem .5rem;
     }
 
@@ -1886,8 +1954,9 @@ footer ul li a {
 /* 5b. Contact Info */ 
 
     #contact-info {
-        margin-bottom: 4.2rem;
-        border-radius: 8px;
+        margin-bottom: 4.15rem;
+        border-radius: 10px;
+        border: 4px solid #803960;
     }
 
     #contact-info h2 {
