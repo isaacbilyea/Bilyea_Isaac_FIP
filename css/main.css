@@ -421,7 +421,6 @@ header {
     padding-left: 0.25rem;
 }
 
-
 #endless-images img:hover {
     transform: translateY(-0.25rem);
 }
@@ -675,6 +674,22 @@ header {
     width: 100%;
 }
 
+.flavour-text {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+.ingredient-list {
+    font-size: 0.9rem;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.ingredient-list span {
+    font-weight: 600;
+}
+
+
 #pineapple-card .product-card-text {
     color: #F7EBBB;
 }
@@ -742,22 +757,6 @@ header {
     background-color: #CCB0BF;
     color: #803960;
 }
-
-.flavour-text {
-    font-size: 1rem;
-    padding-top: 0.5rem;
-}
-
-.ingredient-list {
-    font-size: 0.9rem;
-    align-self: flex-end;
-    margin-top: auto;
-}
-
-.ingredient-list span {
-    font-weight: 600;
-}
-
 
 /* 5. CONTACT PAGE */
 
@@ -914,6 +913,157 @@ footer ul li a {
     margin-top: .75rem;
 }
 
+/* Pre-Tablet Styling */
+
+@media screen and (min-width: 600px) { 
+
+/* 3.  HOME PAGE */
+
+/* 3b. Product Cards */
+
+    .product-cards-index {
+        padding: 1.5rem;
+    }
+
+    .product-card-logo {
+        margin-top: .5rem;
+    }
+
+    .product-label {
+        margin-top: 1.5rem;
+    }
+
+    .product-label h3 {
+        font-size: 1.75rem;
+        padding: .275rem 0rem .575rem 0rem;
+    }
+
+    .info-wrapper {
+        width: 1.5rem;
+        right: 11%;
+        top: 6%;
+    }
+
+    .product-info {
+        font-size: 1.5rem;
+    }
+
+/* 3c. Endless Banner */
+
+    #endless-images {
+        animation: endless 2.25s linear infinite;
+    }
+    
+    @keyframes endless {
+        0% {
+            transform: translateX(0%);
+        }
+    
+        100% {
+            transform: translateX(-41%);
+        }
+    }
+
+/* 3c. Endless Images */
+
+    #sustainability-banner img {
+        height: 3.5rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    
+    #sustainability-banner div:nth-child(5) img {
+        width: 5.5rem;
+    }
+    
+    #sustainability-banner h2 {
+        font-size: 2.75rem;
+    }
+    
+    #sustainability-banner h3 {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    #sustainability-banner h4 {
+        margin-bottom: 3rem;
+    }
+
+/* 4. PRODUCTS PAGE */
+
+/* 4a. Products Hero */
+
+    #video-text {
+        top: 32%;
+        left: 42%;
+    }
+    
+    #hero-video h1 {
+        line-height: 2.75rem;
+        font-size: 2.75rem;
+    }
+    
+    #hero-video button {
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+/* 4b. Assorted Banner */
+
+    #assorted-banner button {
+        font-size: .75rem;
+    }
+
+/* 4c. Product Cards */
+
+    .product-cards h2 {
+        margin-top: -.5rem;
+        font-size: 2.5rem;
+    }
+    
+    .product-cards h3 { 
+        font-size: 1.5rem;
+        margin-top: -.4rem;
+    }
+    
+    .product-cards button {
+        font-size: 1.2rem;
+    }
+    
+    .product-cards img {
+        padding: 2rem;
+    }
+    
+    .flavour-text {
+        font-size: 1.5rem;
+    }
+    
+    .ingredient-list {
+        font-size: 1.3rem;
+    }
+
+/* 6. FOOTER */
+
+    #sm-icons {
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    
+    #sm-icons img {
+        height: 1.5em;
+        padding-left: .5rem;
+    }
+    
+    footer h2 {
+        font-size: 1rem;
+    }
+    
+    footer ul {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+}
 
 /* Tablet Styling */
 
@@ -2027,6 +2177,5 @@ footer ul li a {
         margin-right: 5rem;
         margin-top: 1.5rem;
     }
-
 
 }
