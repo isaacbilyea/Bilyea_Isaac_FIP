@@ -63,31 +63,30 @@
         </div>
     
         <div id="form-input" class="col-span-full l-col-start-1 l-col-end-9">
-            <form action="email.php" method="POST" enctype="text/plain">
+            <form action="email.php" method="POST" enctype="text/plain" onsubmit="return false">
                 <input name="fullName" type="text" placeholder="Name*">
                 <input name="contactInfo" type="text" required placeholder="Email*">
                 <textarea name="message" placeholder="Message"></textarea>
-                <input name="submit" type="submit" value="Send">
+                <input name="submit" type="submit" value="Send" id="send-button">
             </form>
         </div>
     </section>
 
-<!-- MOVING LOGO -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="430.705" viewBox="0 0 1921.058 430.705">
-        <defs>
-            <path id="motionPath" d="M0,125.787c135.793-.4,378.928-17.289,806.156-81.85,548.174-82.837,917.423-32.3,1115.034,18.974" fill="none"/>
-        </defs>
-        <image href="images/quatro-logo-passionfruit.svg" width="100" height="100">
-            <animatemotion dur="3s" repeatCount="indefinite">
-                <mpath href="#motionPath"/>
-            </animatemotion>
-        </image>
-
-        <path d="M0,125.787c135.793-.4,378.928-17.289,806.156-81.85,548.174-82.837,917.423-32.3,1115.034,18.974" fill="none" stroke="red"/>
-    </svg>
 
 <!-- FOOTER -->
     <footer id="contact-footer">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1921.058 430.705" id="moving-logo">
+            <defs>
+                <path id="motionPath" d="M0,125.787c135.793-.4,378.928-17.289,806.156-81.85,548.174-82.837,917.423-32.3,1115.034,18.974"  fill="none"/>
+            </defs>
+                <image href="images/quatro-logo-passionfruit.svg">
+                    <animatemotion begin="indefinite" dur="2s" repeatCount="1" rotate="auto">
+                        <mpath href="#motionPath"/>
+                    </animatemotion>
+                </image>
+        </svg>
+
         <div id="sm-icons">
             <img src="images/sm-instagram.svg" alt="instagram-logo">
             <img src="images/sm-twitter.svg" alt="twitter-logo">
