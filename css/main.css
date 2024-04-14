@@ -1837,6 +1837,137 @@ footer ul li a {
 
 }
 
+/* Marge Desktop Styling */
+
+@media screen and (min-width: 1440px) { 
+
+    /* 3.  HOME PAGE */
+    
+    /* 3b. Product Cards */
+    
+        .product-cards-index {
+            padding: 1.5rem;
+        }
+
+        .product-label h3 {
+            font-size: 2rem;
+        }
+    
+        .info-wrapper {
+            width: 1.75rem;
+            right: 10%;
+            top: 6%;
+        }
+    
+        .product-info {
+            font-size: 1.8rem;
+        }
+    
+    /* 3c. Endless Banner */
+
+        #endless-banner {
+            height: 440px;
+        }
+    
+        #endless-images {
+            height: 220px;
+            animation: endless 2.25s linear infinite;
+        }
+        
+        @keyframes endless {
+            0% {
+                transform: translateX(0%);
+            }
+        
+            100% {
+                transform: translateX(-32.5%);
+            }
+        }
+    
+    
+    /* 4. PRODUCTS PAGE */
+    
+    /* 4a. Products Hero */
+    
+        #video-text {
+            top: 30%;
+            left: 41%;
+        }
+        
+        #hero-video h1 {
+            line-height: 6.5rem;
+            font-size: 6.5rem;
+        }
+        
+        #hero-video button {
+            width: 100%;
+            font-size: 2.5rem;
+        }
+        
+    /* 4b. Assorted Banner */
+    
+        #assorted-banner button {
+            font-size: 2rem;
+        }
+    
+    /* 4c. Product Cards */
+    
+        .product-cards h2 {
+            margin-top: -.5rem;
+            font-size: 3rem;
+        }
+        
+        .product-cards h3 { 
+            font-size: 2rem;
+            margin-top: -.1rem;
+        }
+        
+        .product-cards button {
+            font-size: 1.2rem;
+        }
+        
+        .product-cards img {
+            padding: 2.25rem;
+        }
+        
+        .flavour-text {
+            font-size: 2rem;
+            line-height: 2.25rem;
+        }
+    
+        .ingredient-list {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    
+    /* 5. CONTACT PAGE */ 
+
+        #moving-logo {
+            bottom: 35%;
+        }
+        
+    /* 6. FOOTER */
+    
+        #contact-footer {
+            margin-top: 10rem;
+        }
+
+        #sm-icons {
+            margin-top: 6rem;
+            margin-left: 3rem;
+        }
+        
+        footer h2 {
+            font-size: 2rem;
+        }
+        
+        footer ul {
+            font-size: 2rem;
+        }
+        
+    }
+    
+
 /* Large Desktop Styling */
 
 @media screen and (min-width: 1920px) { 
